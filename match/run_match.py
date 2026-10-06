@@ -25,6 +25,10 @@ sys.path.insert(0, ROOT)
 from engine.board import Board  # noqa: E402
 from match.stats import match_stats, format_stats  # noqa: E402
 
+START_TIMEOUT = 120   # seconds for a fresh engine to answer uci; this machine can stall process start
+MOVE_GRACE = 30       # seconds beyond movetime before a move counts as a stall
+MAX_ATTEMPTS = 3      # a game interrupted by a stall is replayed from the start up to this many times
+STALL_REPORT = 1.0    # the watchdog logs scheduling delays longer than this (seconds)
 RESIGN_CP = 1000
 RESIGN_PLIES = 8      # 4 consecutive moves by each engine
 MAX_PLIES = 300
@@ -61,7 +65,7 @@ class Engine:
         self.lines = queue.Queue()
         threading.Thread(target=self._reader, daemon=True).start()
         self.send("uci")
-        self.wait_for("uciok", 30)
+        self.wait_for("uciok", START_TIMEOUT)
 
     def _reader(self):
         for line in self.proc.stdout:
@@ -101,7 +105,7 @@ class Engine:
     def go(self, moves, movetime_ms):
         self.send("position startpos" + (" moves " + " ".join(moves) if moves else ""))
         self.send("go movetime %d" % movetime_ms)
-        line, seen = self.wait_for("bestmove", movetime_ms / 1000.0 + 10)
+        line, seen = self.wait_for("bestmove", movetime_ms / 1000.0 + MOVE_GRACE)
         score = None
         for l in seen:
             parts = l.split()
@@ -127,15 +131,26 @@ class Engine:
                 pass
 
 
+class Stall(Exception):
+    """An engine did not answer in time or died: an environment problem, not a chess result."""
+
+
 def play_game(white, black, opening, movetime_ms):
-    """Play one game. Returns (result, termination, moves) with result '1-0', '0-1' or '1/2-1/2'."""
+    """Play one game. Returns (result, termination, moves) with result '1-0', '0-1' or '1/2-1/2'.
+
+    Raises Stall if an engine times out or exits; the caller replays the game.
+    An illegal move is still a forfeit.
+    """
     board = Board()
     moves = []
     for s in opening:
         board.make(board.parse_uci(s))
         moves.append(s)
-    white.new_game()
-    black.new_game()
+    try:
+        white.new_game()
+        black.new_game()
+    except EngineError as e:
+        raise Stall(str(e))
     white_pov = []  # each engine's reported score, converted to white's point of view
     while True:
         legal = board.legal_moves()
@@ -163,7 +178,7 @@ def play_game(white, black, opening, movetime_ms):
         try:
             uci, score = mover.go(moves, movetime_ms)
         except EngineError as e:
-            return loser_result, "forfeit: %s" % e, moves
+            raise Stall("%s after %d plies" % (e, len(moves)))
         m = board.parse_uci(uci)
         if m is None:
             return loser_result, "forfeit: illegal move %s" % uci, moves
@@ -205,11 +220,12 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
     openings = load_openings()
     jobs = []
     for i, (oname, omoves) in enumerate(openings):
-        jobs.append((2 * i, oname, omoves, True))       # A plays white
-        jobs.append((2 * i + 1, oname, omoves, False))  # A plays black
+        jobs.append((2 * i, oname, omoves, True, 1))       # A plays white
+        jobs.append((2 * i + 1, oname, omoves, False, 1))  # A plays black
     if max_games is not None:
         jobs = jobs[:max_games]
-    workers = workers or max(1, (os.cpu_count() or 2) // 2)
+    # Default: 6 games at a time, leaving cores for other jobs on this machine.
+    workers = workers or max(1, min(6, (os.cpu_count() or 2) // 2))
     out_dir = os.path.abspath(os.path.join(out_root or os.path.join(ROOT, "matches"), name))
     os.makedirs(out_dir, exist_ok=True)
     a_label, b_label = os.path.basename(os.path.normpath(a)), os.path.basename(os.path.normpath(b))
@@ -220,7 +236,11 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
     for j in jobs:
         job_q.put(j)
     games = []
+    replays = []
+    abandoned = []
+    stalls = []
     lock = threading.Lock()
+    done = threading.Event()
     started = datetime.datetime.now().astimezone()
     log = open(os.path.join(out_dir, "log.txt"), "a")
 
@@ -234,6 +254,9 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
             "started": started.isoformat(timespec="seconds"),
             "finished": datetime.datetime.now().astimezone().isoformat(timespec="seconds") if final else None,
             "stats": match_stats(w, d, l) if games else None,
+            "replays": replays,
+            "abandoned": abandoned,
+            "stalls": stalls,
             "games": sorted(({k: v for k, v in g.items() if k != "moves"} for g in games),
                             key=lambda g: g["index"]),
         }
@@ -241,25 +264,74 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
             json.dump(summary, f, indent=1)
         return summary
 
+    def note(line):
+        with lock:
+            print(line, flush=True)
+            log.write(line + "\n")
+            log.flush()
+
+    def now():
+        return datetime.datetime.now().strftime("%H:%M:%S")
+
+    def start(path, tag):
+        for attempt in range(1, 4):
+            log_path = os.path.join(out_dir, "engine-%03d-%s.log" % (next(engine_ids), tag)) if debug else None
+            try:
+                return Engine(path, log_path)
+            except EngineError as e:
+                note("[%s] engine start failed (attempt %d): %s" % (now(), attempt, e))
+        raise EngineError("engine %s failed to start 3 times" % path)
+
     def engines():
-        if not debug:
-            return Engine(a), Engine(b)
-        n = next(engine_ids)
-        return (Engine(a, os.path.join(out_dir, "engine-%03d-a.log" % n)),
-                Engine(b, os.path.join(out_dir, "engine-%03d-b.log" % n)))
+        ea = start(a, "a")
+        try:
+            return ea, start(b, "b")
+        except EngineError:
+            ea.quit()
+            raise
 
     engine_ids = iter(range(10**6))
+
+    def watchdog():
+        # Measures this process's own scheduling delay; long ones mean the machine is overloaded.
+        while not done.is_set():
+            t = time.perf_counter()
+            time.sleep(0.25)
+            late = time.perf_counter() - t - 0.25
+            if late > STALL_REPORT:
+                with lock:
+                    stalls.append({"at": now(), "seconds": round(late, 1)})
+                note("[%s] scheduling stall: the runner was %.1f s late" % (now(), late))
 
     def worker():
         ea, eb = engines()
         try:
             while True:
                 try:
-                    index, oname, omoves, a_white = job_q.get_nowait()
+                    index, oname, omoves, a_white, attempt = job_q.get_nowait()
                 except queue.Empty:
                     return
                 white, black = (ea, eb) if a_white else (eb, ea)
-                result, term, moves = play_game(white, black, omoves, movetime_ms)
+                try:
+                    result, term, moves = play_game(white, black, omoves, movetime_ms)
+                except Stall as e:
+                    ea.quit()
+                    eb.quit()
+                    if attempt < MAX_ATTEMPTS:
+                        with lock:
+                            replays.append({"index": index, "opening": oname, "attempt": attempt,
+                                            "reason": str(e)})
+                        note("[%s] game %d (%s) interrupted: %s; replaying (attempt %d of %d)" % (
+                            now(), index + 1, oname, e, attempt + 1, MAX_ATTEMPTS))
+                        job_q.put((index, oname, omoves, a_white, attempt + 1))
+                    else:
+                        # Out of attempts: leave it out of the score rather than guess a result.
+                        with lock:
+                            abandoned.append({"index": index, "opening": oname, "reason": str(e)})
+                        note("[%s] game %d (%s) abandoned after %d stalls: %s" % (
+                            now(), index + 1, oname, attempt, e))
+                    ea, eb = engines()
+                    continue
                 a_score = {"1-0": 1.0, "0-1": 0.0, "1/2-1/2": 0.5}[result]
                 if not a_white:
                     a_score = 1.0 - a_score
@@ -278,25 +350,31 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
                     print(line, flush=True)
                     log.write(line + "\n")
                     log.flush()
-                    # Restart engines that forfeited, so one crash doesn't lose the rest of the worker's games.
-                    if term.startswith("forfeit"):
-                        ea.quit()
-                        eb.quit()
-                        ea, eb = engines()
+                # Restart engines after an illegal-move forfeit, outside the lock.
+                if term.startswith("forfeit"):
+                    ea.quit()
+                    eb.quit()
+                    ea, eb = engines()
         finally:
             ea.quit()
             eb.quit()
 
+    threading.Thread(target=watchdog, daemon=True).start()
     threads = [threading.Thread(target=worker) for _ in range(workers)]
     for t in threads:
         t.start()
     for t in threads:
         t.join()
-    summary = write_summary(final=True)
-    line = "FINAL %s (%s vs %s): %s" % (name, a_label, b_label, format_stats(summary["stats"]))
-    print(line, flush=True)
-    log.write(line + "\n")
-    log.close()
+    done.set()
+    try:
+        summary = write_summary(final=True)
+        result = format_stats(summary["stats"]) if summary["stats"] else "no games completed"
+        line = "FINAL %s (%s vs %s): %s; %d replayed, %d abandoned, %d scheduling stalls" % (
+            name, a_label, b_label, result, len(replays), len(abandoned), len(stalls))
+        print(line, flush=True)
+        log.write(line + "\n")
+    finally:
+        log.close()
     return summary
 
 

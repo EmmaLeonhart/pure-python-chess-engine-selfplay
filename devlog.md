@@ -25,3 +25,15 @@
   - Endings: 104 resignation adjudications, 47 threefold repetitions, 13 checkmates, 11 fifty-move draws, 7 insufficient material, 7 move-limit draws, 1 stalemate.
   - **10 games were forfeits:** "timeout waiting for bestmove", meaning no `bestmove` arrived within movetime + 10 s. They came in two bursts, 05:01-05:04 and 05:32-05:43.
   - Replaying one forfeited game move by move through v0 did not reproduce the hang. Investigating with `--debug` mode (`match/engine_host.py` logs engine stderr and dumps thread stacks on a hang) before round 1. A bug that causes forfeits would distort every later match.
+- 06:59 PST: forfeit cause found. It is machine contention, not an engine bug.
+  - A `--debug` hunt (v0 vs v0 at 200 ms, stopped after about 95 games) had 19 forfeits between 06:39 and 06:54, none after.
+  - The stack dumps show each "hung" engine idle on stdin with its search thread finished: it had answered.
+  - Over the same stretch, `go` commands that came every 0.3-0.5 s slowed to one every 2-3 s.
+  - Fresh engines sometimes took over 30 s to answer `uci`, which crashed workers in the old runner.
+  - Other projects' jobs were running heavy work on the machine at the same time, including `tools/run_suite.py` with multiprocessing workers. A 90 s scheduling probe at 06:56, after the burst, showed no stalls.
+  - **Runner fix:** a timeout or engine exit is now a *stall*, not a forfeit. The game is replayed from the start up to 3 times, and left out of the score if it never completes. Illegal moves still forfeit.
+  - Engine start gets 120 s and 3 retries.
+  - A watchdog records the runner's own scheduling stalls over 1 s in the log and `summary.json`.
+  - Default parallelism is now 6 games.
+  - Test added: `tests/fixtures/silent_engine`, a fake engine that never answers `go`; the test checks the game is replayed and then abandoned.
+  - Round 0's 10 forfeits are left as recorded. Both sides were v0, so they don't bias a self-match.

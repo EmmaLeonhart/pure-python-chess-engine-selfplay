@@ -4,6 +4,7 @@ import tempfile
 import unittest
 
 from engine.board import Board
+from match import run_match as run_match_module
 from match.run_match import load_openings, run_match, ROOT
 from match.stats import match_stats, elo_from_score
 
@@ -56,6 +57,20 @@ class MatchSmokeTest(unittest.TestCase):
             for g in summary["games"]:
                 self.assertFalse(g["termination"].startswith("forfeit"), g)
             self.assertTrue(os.path.exists(os.path.join(out, "smoke", "games.pgn")))
+
+    def test_stalled_game_is_replayed_then_abandoned(self):
+        silent = os.path.join(ROOT, "tests", "fixtures", "silent_engine")
+        old = run_match_module.MOVE_GRACE
+        run_match_module.MOVE_GRACE = 0.5
+        try:
+            with tempfile.TemporaryDirectory() as out:
+                summary = run_match(silent, silent, "stall", movetime_ms=10, workers=1, max_games=1,
+                                    out_root=out)
+        finally:
+            run_match_module.MOVE_GRACE = old
+        self.assertIsNone(summary["stats"])  # no game counted
+        self.assertEqual(len(summary["replays"]), run_match_module.MAX_ATTEMPTS - 1)
+        self.assertEqual(len(summary["abandoned"]), 1)
 
 
 if __name__ == "__main__":
