@@ -24,6 +24,15 @@ measured self-play, following `data_lake/brief.md`:
 
 The brief calls it a long project: keep going after each round.
 
+## Where it stands
+
+- Engine, perft, UCI and match runner are done.
+- Round 0 (bias check) passed.
+- Round 1 (killers + history) was rejected at -0.4 to +81.8 Elo. The
+  pre-registered rule is applied as written, even for near misses.
+- Current best: v0. Round 2 (v2 = full move time) is running.
+- Live results are in the README table; history is in `devlog.md`.
+
 ## What supports it
 
 - `data_lake/brief.md`: an explicit spec (above).
