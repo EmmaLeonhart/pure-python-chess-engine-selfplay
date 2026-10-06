@@ -1,0 +1,102 @@
+# Fixed opening set for matches: one line per opening, "name | UCI moves from the start position".
+# Each opening is played twice in a match, once with each engine as white.
+Ruy Lopez Morphy | e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5a4 g8f6
+Ruy Lopez Berlin | e2e4 e7e5 g1f3 b8c6 f1b5 g8f6 e1g1 f6e4
+Ruy Lopez Exchange | e2e4 e7e5 g1f3 b8c6 f1b5 a7a6 b5c6 d7c6
+Italian Giuoco Piano | e2e4 e7e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6
+Two Knights | e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 d2d3 f8e7
+Scotch | e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6
+Four Knights | e2e4 e7e5 g1f3 b8c6 b1c3 g8f6 f1b5 f8b4
+Petroff | e2e4 e7e5 g1f3 g8f6 f3e5 d7d6 e5f3 f6e4
+Philidor | e2e4 e7e5 g1f3 d7d6 d2d4 g8f6 b1c3 b8d7
+Vienna | e2e4 e7e5 b1c3 g8f6 f2f4 d7d5 f4e5 f6e4
+Kings Gambit Accepted | e2e4 e7e5 f2f4 e5f4 g1f3 g7g5 h2h4 g5g4
+Bishops Opening | e2e4 e7e5 f1c4 g8f6 d2d3 c7c6 g1f3 d7d5
+Ponziani | e2e4 e7e5 g1f3 b8c6 c2c3 g8f6 d2d4 f6e4
+Sicilian Najdorf | e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6
+Sicilian Dragon | e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6
+Sicilian Scheveningen | e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 g8f6 b1c3 d7d6
+Sicilian Taimanov | e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 b8c6 b1c3 d8c7
+Sicilian Kan | e2e4 c7c5 g1f3 e7e6 d2d4 c5d4 f3d4 a7a6 f1d3 g8f6
+Sicilian Sveshnikov | e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 e7e5
+Sicilian Accelerated Dragon | e2e4 c7c5 g1f3 b8c6 d2d4 c5d4 f3d4 g7g6 b1c3 f8g7
+Sicilian Rossolimo | e2e4 c7c5 g1f3 b8c6 f1b5 g7g6 e1g1 f8g7
+Sicilian Moscow | e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 b5d7 d8d7
+Sicilian Alapin | e2e4 c7c5 c2c3 g8f6 e4e5 f6d5 d2d4 c5d4
+Sicilian Closed | e2e4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7
+Sicilian Smith-Morra | e2e4 c7c5 d2d4 c5d4 c2c3 d4c3 b1c3 b8c6
+French Winawer | e2e4 e7e6 d2d4 d7d5 b1c3 f8b4 e4e5 c7c5
+French Classical | e2e4 e7e6 d2d4 d7d5 b1c3 g8f6 c1g5 f8e7
+French Tarrasch | e2e4 e7e6 d2d4 d7d5 b1d2 c7c5 g1f3 b8c6
+French Advance | e2e4 e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 b8c6
+French Exchange | e2e4 e7e6 d2d4 d7d5 e4d5 e6d5 g1f3 g8f6
+French Rubinstein | e2e4 e7e6 d2d4 d7d5 b1c3 d5e4 c3e4 b8d7
+Caro-Kann Classical | e2e4 c7c6 d2d4 d7d5 b1c3 d5e4 c3e4 c8f5
+Caro-Kann Advance | e2e4 c7c6 d2d4 d7d5 e4e5 c8f5 g1f3 e7e6
+Caro-Kann Exchange | e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 f1d3 b8c6
+Caro-Kann Panov | e2e4 c7c6 d2d4 d7d5 e4d5 c6d5 c2c4 g8f6
+Caro-Kann Two Knights | e2e4 c7c6 b1c3 d7d5 g1f3 c8g4 h2h3 g4f3
+Pirc Classical | e2e4 d7d6 d2d4 g8f6 b1c3 g7g6 g1f3 f8g7
+Pirc Austrian | e2e4 d7d6 d2d4 g8f6 b1c3 g7g6 f2f4 f8g7
+Modern | e2e4 g7g6 d2d4 f8g7 b1c3 d7d6 c1e3 a7a6
+Alekhine Modern | e2e4 g8f6 e4e5 f6d5 d2d4 d7d6 g1f3 c8g4
+Scandinavian Main | e2e4 d7d5 e4d5 d8d5 b1c3 d5a5 d2d4 g8f6
+Scandinavian Modern | e2e4 d7d5 e4d5 g8f6 d2d4 f6d5 g1f3 c8g4
+Nimzowitsch Defence | e2e4 b8c6 g1f3 d7d6 d2d4 g8f6 b1c3 c8g4
+Owen | e2e4 b7b6 d2d4 c8b7 f1d3 e7e6 g1f3 c7c5
+QGD Orthodox | d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c1g5 f8e7
+QGD Exchange | d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 c4d5 e6d5
+QGD Ragozin | d2d4 d7d5 c2c4 e7e6 b1c3 g8f6 g1f3 f8b4
+QGD Tarrasch | d2d4 d7d5 c2c4 e7e6 b1c3 c7c5 c4d5 e6d5
+QGA | d2d4 d7d5 c2c4 d5c4 g1f3 g8f6 e2e3 e7e6
+Slav Main | d2d4 d7d5 c2c4 c7c6 g1f3 g8f6 b1c3 d5c4
+Slav Exchange | d2d4 d7d5 c2c4 c7c6 c4d5 c6d5 b1c3 g8f6
+Semi-Slav Meran | d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 g1f3 e7e6 e2e3 b8d7
+Semi-Slav Botvinnik | d2d4 d7d5 c2c4 c7c6 b1c3 g8f6 g1f3 e7e6 c1g5 d5c4
+Chigorin | d2d4 d7d5 c2c4 b8c6 b1c3 d5c4 g1f3 g8f6
+Albin Countergambit | d2d4 d7d5 c2c4 e7e5 d4e5 d5d4 g1f3 b8c6
+Nimzo-Indian Rubinstein | d2d4 g8f6 c2c4 e7e6 b1c3 f8b4 e2e3 e8g8
+Nimzo-Indian Classical | d2d4 g8f6 c2c4 e7e6 b1c3 f8b4 d1c2 e8g8
+Queens Indian | d2d4 g8f6 c2c4 e7e6 g1f3 b7b6 g2g3 c8a6
+Bogo-Indian | d2d4 g8f6 c2c4 e7e6 g1f3 f8b4 c1d2 d8e7
+Catalan Open | d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 d5c4
+Catalan Closed | d2d4 g8f6 c2c4 e7e6 g2g3 d7d5 f1g2 f8e7
+Kings Indian Classical | d2d4 g8f6 c2c4 g7g6 b1c3 f8g7 e2e4 d7d6 g1f3 e8g8
+Kings Indian Samisch | d2d4 g8f6 c2c4 g7g6 b1c3 f8g7 e2e4 d7d6 f2f3 e8g8
+Kings Indian Fianchetto | d2d4 g8f6 c2c4 g7g6 g1f3 f8g7 g2g3 e8g8
+Grunfeld Exchange | d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 c4d5 f6d5
+Grunfeld Russian | d2d4 g8f6 c2c4 g7g6 b1c3 d7d5 g1f3 f8g7 d1b3 d5c4
+Benoni Modern | d2d4 g8f6 c2c4 c7c5 d4d5 e7e6 b1c3 e6d5 c4d5 d7d6
+Benko Gambit | d2d4 g8f6 c2c4 c7c5 d4d5 b7b5 c4b5 a7a6
+Old Indian | d2d4 g8f6 c2c4 d7d6 b1c3 e7e5 g1f3 b8d7
+Dutch Leningrad | d2d4 f7f5 g2g3 g8f6 f1g2 g7g6 g1f3 f8g7
+Dutch Stonewall | d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 d7d5
+Dutch Classical | d2d4 f7f5 c2c4 g8f6 g2g3 e7e6 f1g2 f8e7
+Budapest | d2d4 g8f6 c2c4 e7e5 d4e5 f6g4 c1f4 b8c6
+London | d2d4 d7d5 c1f4 g8f6 e2e3 e7e6 g1f3 c7c5
+London vs KID | d2d4 g8f6 c1f4 g7g6 e2e3 f8g7 g1f3 d7d6
+Colle | d2d4 d7d5 g1f3 g8f6 e2e3 e7e6 f1d3 c7c5
+Torre | d2d4 g8f6 g1f3 e7e6 c1g5 c7c5 e2e3 h7h6
+Trompowsky | d2d4 g8f6 c1g5 f6e4 g5f4 c7c5 f2f3 d8a5
+Veresov | d2d4 d7d5 b1c3 g8f6 c1g5 b8d7 g1f3 h7h6
+Blackmar-Diemer | d2d4 d7d5 e2e4 d5e4 b1c3 g8f6 f2f3 e4f3
+English Symmetrical | c2c4 c7c5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7
+English Four Knights | c2c4 e7e5 b1c3 g8f6 g1f3 b8c6 g2g3 d7d5
+English Reversed Sicilian | c2c4 e7e5 b1c3 b8c6 g2g3 g7g6 f1g2 f8g7
+English Anglo-Indian | c2c4 g8f6 b1c3 e7e6 e2e4 d7d5 e4e5 d5d4
+English Hedgehog | c2c4 c7c5 g1f3 g8f6 b1c3 e7e6 g2g3 b7b6
+Reti | g1f3 d7d5 c2c4 e7e6 g2g3 g8f6 f1g2 f8e7
+Reti Kings Indian Attack | g1f3 d7d5 g2g3 g8f6 f1g2 c7c6 e1g1 c8g4
+Kings Indian Attack vs French | e2e4 e7e6 d2d3 d7d5 b1d2 g8f6 g1f3 c7c5
+Larsen | b2b3 e7e5 c1b2 b8c6 e2e3 g8f6 f1b5 d7d6
+Bird | f2f4 d7d5 g1f3 g8f6 e2e3 g7g6 f1e2 f8g7
+Polish | b2b4 e7e5 c1b2 f8b4 b2e5 g8f6 c2c4 e8g8
+Grob | g2g4 d7d5 f1g2 c8g4 c2c4 c7c6 d1b3 d8b6
+Nimzo-Larsen vs d5 | b2b3 d7d5 c1b2 g8f6 g1f3 e7e6 e2e3 f8e7
+Sokolsky vs d5 | b2b4 d7d5 c1b2 g8f6 e2e3 e7e6 a2a3 c7c5
+Kings Fianchetto vs e5 | g2g3 e7e5 f1g2 d7d5 d2d3 g8f6 g1f3 b8c6
+Van Geet | b1c3 d7d5 e2e4 d5d4 c3e2 e7e5 e2g3 c8e6
+Center Game | e2e4 e7e5 d2d4 e5d4 d1d4 b8c6 d4e3 g8f6
+Danish Declined | e2e4 e7e5 d2d4 e5d4 c2c3 d7d5 e4d5 g8f6
+Latvian Gambit | e2e4 e7e5 g1f3 f7f5 f3e5 d8f6 d2d4 d7d6
+Elephant Gambit | e2e4 e7e5 g1f3 d7d5 e4d5 e5e4 d1e2 g8f6

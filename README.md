@@ -17,6 +17,25 @@ change at a time by measured self-play. The spec is `data_lake/brief.md`.
    round, a full match against the previous best, kept only on a
    statistically clear win.
 
+## How a round is judged
+
+- A match is 200 games: each of the 100 openings in `match/openings.txt`
+  (well-known lines of 8-10 plies) is played once with each engine as white,
+  at `go movetime 1000` (1 second a move). Games run 8 at a time, one per
+  pair of CPU cores.
+- Games end on mate, stalemate, threefold repetition, the 50-move rule or
+  insufficient material. The runner adjudicates a resignation when both
+  engines' reported scores agree on +-1000 cp or more for 4 moves each, and a
+  draw at 300 plies.
+- Elo difference = -400 log10(1/s - 1), where s is the candidate's score. The
+  95% interval comes from the per-game score variance (`match/stats.py`).
+- **Acceptance rule (fixed before round 1):** a change is kept only if the
+  lower end of its 95% Elo interval is above 0. Otherwise it is rejected, and
+  the next round starts from the previous best.
+
+Run a match: `python match/run_match.py --a versions/v1 --b versions/v0 --name round01`.
+Output (PGN, `summary.json`, log) goes to `matches/<name>/`.
+
 ## Results
 
 _No rounds played yet._ Each round will be listed here: what changed, the

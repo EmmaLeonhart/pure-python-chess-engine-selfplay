@@ -13,3 +13,10 @@
   - Perft passes for all six CPW positions to depth 4, and for the start position and position 3 to depth 5 (`PERFT_SLOW=1`, 68 s).
   - Search and UCI tests pass. Speed is about 80-100k nodes/s; a 1 s search reaches depth 5 from the start position.
   - CI runs `unittest` on push.
+- 04:54 PST: match infrastructure built.
+  - `match/openings.txt`: 100 distinct, legal opening lines.
+  - `match/run_match.py`: a parallel UCI match runner with PGN and JSON output, adjudication, and forfeit on timeouts or illegal moves.
+  - `match/stats.py`: score, Elo and 95% interval.
+  - The acceptance rule is written in the README.
+  - Froze the baseline as `versions/v0`.
+  - Smoke match (4 games at 100 ms) ran cleanly. v0 often uses only about half its move time, because it won't start an iteration after half the budget is gone.
