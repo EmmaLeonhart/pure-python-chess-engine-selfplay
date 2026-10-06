@@ -49,3 +49,6 @@
   - **Kept.** Best version is now v2.
   - Froze v3 (v2 + null-move pruning, R = 2) and started round 3 (v3 vs v2).
 - 10:03 PST: round 3 was stopped by Claude Code at 24/200 games because the system was critically low on memory. The partial score was +8 =13 -3. No project processes were left running afterwards, and 9.1 GB of RAM was free at 10:03. Per the stop notice it is not restarted without the user asking, so the match waits for Emma.
+- 10:45 PST: measured engine memory (`scratch/engine_memory.py`, one v2 process playing a 60-move game at 1 s/move).
+  - Private memory grows from 16 MB to 54 MB over the game as the transposition table fills. The table is cleared at each `ucinewgame`.
+  - A match runs 12 engines, so about 0.5-1 GB in total. That is a small share of this 31 GB machine, so the low-memory stop most likely came from other jobs. A restart would not need a lighter runner.
