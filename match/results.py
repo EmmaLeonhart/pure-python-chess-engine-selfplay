@@ -28,10 +28,14 @@ def table(rounds):
         if not os.path.exists(path):
             continue
         with open(path) as f:
-            st = json.load(f)["stats"]
+            summary = json.load(f)
+        st = summary["stats"]
+        kept = r["kept"]
+        if not summary.get("finished"):
+            kept = "running (%d/%d games)" % (st["games"], summary["planned_games"])
         rows.append("| %s | %s vs %s | %s | %d / %d / %d | %.1f%% | %+.0f +- %.0f (%+.0f to %+.0f) | %s |" % (
             r["round"], r["candidate"], r["baseline"], r["change"], st["wins"], st["draws"], st["losses"],
-            100 * st["score"], st["elo"], st["elo_error"], st["elo_lo"], st["elo_hi"], r["kept"]))
+            100 * st["score"], st["elo"], st["elo_error"], st["elo_lo"], st["elo_hi"], kept))
     return "\n".join(rows)
 
 
