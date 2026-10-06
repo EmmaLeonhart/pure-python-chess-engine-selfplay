@@ -1,0 +1,4 @@
+[
+ {"round": "0", "match": "round00-v0-vs-v0", "candidate": "v0", "baseline": "v0",
+  "change": "none (bias check of the runner)", "kept": "n/a"}
+]
