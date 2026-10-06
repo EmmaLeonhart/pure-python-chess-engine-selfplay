@@ -1,0 +1,58 @@
+[07:01:34] game 1/200 Ruy Lopez Exchange: v0 vs v1 1/2-1/2 (threefold repetition); 1 games: +0 =1 -0, score 50.0%, Elo -0.0 +- 0.0 (95% interval -0.0 to -0.0)
+[07:01:48] game 2/200 Ruy Lopez Exchange: v1 vs v0 0-1 (adjudicated: resignation); 2 games: +0 =1 -1, score 25.0%, Elo -190.8 +- inf (95% interval -inf to +67.9)
+[07:01:59] game 3/200 Ruy Lopez Berlin: v0 vs v1 1-0 (adjudicated: resignation); 3 games: +0 =1 -2, score 16.7%, Elo -279.6 +- inf (95% interval -inf to -46.6)
+[07:02:15] game 4/200 Ruy Lopez Morphy: v1 vs v0 1/2-1/2 (threefold repetition); 4 games: +0 =2 -2, score 25.0%, Elo -190.8 +- 458.0 (95% interval -919.4 to -3.5)
+[07:02:28] game 5/200 Ruy Lopez Morphy: v0 vs v1 0-1 (adjudicated: resignation); 5 games: +1 =2 -2, score 40.0%, Elo -70.4 +- 307.5 (95% interval -444.0 to +171.0)
+[07:02:55] game 6/200 Italian Giuoco Piano: v0 vs v1 1-0 (checkmate); 6 games: +1 =2 -3, score 33.3%, Elo -120.4 +- 334.5 (95% interval -575.5 to +93.6)
+[07:03:06] game 7/200 Ruy Lopez Berlin: v1 vs v0 1/2-1/2 (threefold repetition); 7 games: +1 =3 -3, score 35.7%, Elo -102.1 +- 234.1 (95% interval -385.8 to +82.4)
+[07:03:09] game 8/200 Scotch: v1 vs v0 1-0 (adjudicated: resignation); 8 games: +2 =3 -3, score 43.8%, Elo -43.7 +- 216.5 (95% interval -279.1 to +153.8)
+[07:03:31] game 9/200 Italian Giuoco Piano: v1 vs v0 1-0 (adjudicated: resignation); 9 games: +3 =3 -3, score 50.0%, Elo -0.0 +- 206.7 (95% interval -206.7 to +206.7)
+[07:03:31] game 10/200 Two Knights: v0 vs v1 0-1 (adjudicated: resignation); 10 games: +4 =3 -3, score 55.0%, Elo +34.9 +- 201.2 (95% interval -153.4 to +249.0)
+[07:03:34] game 11/200 Scotch: v0 vs v1 1-0 (adjudicated: resignation); 11 games: +4 =3 -4, score 50.0%, Elo -0.0 +- 192.7 (95% interval -192.7 to +192.7)
+[07:04:15] game 12/200 Four Knights: v0 vs v1 1/2-1/2 (threefold repetition); 12 games: +4 =4 -4, score 50.0%, Elo -0.0 +- 173.7 (95% interval -173.7 to +173.7)
+[07:04:40] game 13/200 Philidor: v1 vs v0 1-0 (adjudicated: resignation); 13 games: +5 =4 -4, score 53.8%, Elo +26.8 +- 170.0 (95% interval -136.3 to +203.7)
+[07:05:09] game 14/200 Petroff: v1 vs v0 0-1 (adjudicated: resignation); 14 games: +5 =4 -5, score 50.0%, Elo -0.0 +- 165.2 (95% interval -165.2 to +165.2)
+[07:05:16] game 15/200 Petroff: v0 vs v1 0-1 (adjudicated: resignation); 15 games: +6 =4 -5, score 53.3%, Elo +23.2 +- 161.7 (95% interval -133.1 to +190.3)
+[07:05:26] game 16/200 Philidor: v0 vs v1 0-1 (adjudicated: resignation); 16 games: +7 =4 -5, score 56.2%, Elo +43.7 +- 159.0 (95% interval -105.6 to +212.3)
+[07:05:26] game 17/200 Four Knights: v1 vs v0 1/2-1/2 (insufficient material); 17 games: +7 =5 -5, score 55.9%, Elo +41.1 +- 148.0 (95% interval -99.1 to +197.0)
+[07:05:38] game 18/200 Vienna: v1 vs v0 1-0 (adjudicated: resignation); 18 games: +8 =5 -5, score 58.3%, Elo +58.5 +- 146.4 (95% interval -77.1 to +215.7)
+[07:05:58] game 19/200 Vienna: v0 vs v1 0-1 (adjudicated: resignation); 19 games: +9 =5 -5, score 60.5%, Elo +74.3 +- 145.0 (95% interval -57.4 to +232.6)
+[07:06:08] scheduling stall: the runner was 1.2 s late
+[07:06:14] scheduling stall: the runner was 1.1 s late
+[07:06:17] scheduling stall: the runner was 1.3 s late
+[07:06:20] game 20/200 Bishops Opening: v1 vs v0 1-0 (checkmate); 20 games: +10 =5 -5, score 62.5%, Elo +88.7 +- 143.9 (95% interval -39.6 to +248.2)
+[07:06:55] game 21/200 Two Knights: v1 vs v0 1/2-1/2 (adjudicated: move limit); 21 games: +10 =6 -5, score 61.9%, Elo +84.3 +- 135.3 (95% interval -37.9 to +232.8)
+[07:08:35] scheduling stall: the runner was 1.4 s late
+[07:08:37] game 22/200 Ponziani: v0 vs v1 0-1 (adjudicated: resignation); 22 games: +11 =6 -5, score 63.6%, Elo +97.2 +- 134.5 (95% interval -22.6 to +246.5)
+[07:08:47] scheduling stall: the runner was 5.5 s late
+[07:09:01] scheduling stall: the runner was 1.0 s late
+[07:09:03] scheduling stall: the runner was 1.9 s late
+[07:09:07] scheduling stall: the runner was 2.2 s late
+[07:09:09] scheduling stall: the runner was 1.5 s late
+[07:09:11] scheduling stall: the runner was 1.4 s late
+[07:09:12] scheduling stall: the runner was 1.5 s late
+[07:09:15] scheduling stall: the runner was 1.8 s late
+[07:09:19] scheduling stall: the runner was 1.3 s late
+[07:09:23] scheduling stall: the runner was 3.3 s late
+[07:09:31] scheduling stall: the runner was 2.1 s late
+[07:09:40] game 23/200 Kings Gambit Accepted: v0 vs v1 0-1 (adjudicated: resignation); 23 games: +12 =6 -5, score 65.2%, Elo +109.2 +- 133.9 (95% interval -8.4 to +259.3)
+[07:09:40] scheduling stall: the runner was 5.1 s late
+[07:09:46] game 24/200 Bishops Opening: v0 vs v1 1-0 (adjudicated: resignation); 24 games: +12 =6 -6, score 62.5%, Elo +88.7 +- 129.8 (95% interval -28.5 to +231.1)
+[07:10:08] game 25/200 Kings Gambit Accepted: v1 vs v0 0-1 (adjudicated: resignation); 25 games: +12 =6 -7, score 60.0%, Elo +70.4 +- 126.3 (95% interval -46.3 to +206.3)
+[07:10:13] game 26/200 Ponziani: v1 vs v0 0-1 (adjudicated: resignation); 26 games: +12 =6 -8, score 57.7%, Elo +53.9 +- 123.4 (95% interval -62.5 to +184.3)
+[07:10:44] game 27/200 Sicilian Najdorf: v0 vs v1 1-0 (adjudicated: resignation); 27 games: +12 =6 -9, score 55.6%, Elo +38.8 +- 120.9 (95% interval -77.3 to +164.6)
+[07:10:58] game 28/200 Sicilian Dragon: v0 vs v1 1/2-1/2 (threefold repetition); 28 games: +12 =7 -9, score 55.4%, Elo +37.4 +- 116.2 (95% interval -74.5 to +157.9)
+[07:11:18] game 29/200 Sicilian Dragon: v1 vs v0 0-1 (adjudicated: resignation); 29 games: +12 =7 -10, score 53.4%, Elo +24.0 +- 114.3 (95% interval -87.6 to +141.0)
+[07:11:32] game 30/200 Sicilian Scheveningen: v0 vs v1 1-0 (checkmate); 30 games: +12 =7 -11, score 51.7%, Elo +11.6 +- 112.7 (95% interval -99.9 to +125.6)
+[07:11:49] game 31/200 Sicilian Scheveningen: v1 vs v0 1/2-1/2 (insufficient material); 31 games: +12 =8 -11, score 51.6%, Elo +11.2 +- 108.8 (95% interval -96.5 to +121.2)
+[07:12:35] game 32/200 Sicilian Kan: v0 vs v1 1-0 (adjudicated: resignation); 32 games: +12 =8 -12, score 50.0%, Elo -0.0 +- 107.6 (95% interval -107.6 to +107.6)
+[07:12:39] game 33/200 Sicilian Sveshnikov: v1 vs v0 1-0 (checkmate); 33 games: +13 =8 -12, score 51.5%, Elo +10.5 +- 106.4 (95% interval -94.9 to +118.0)
+[07:12:45] game 34/200 Sicilian Taimanov: v0 vs v1 1-0 (adjudicated: resignation); 34 games: +13 =8 -13, score 50.0%, Elo -0.0 +- 105.2 (95% interval -105.2 to +105.2)
+[07:12:48] game 35/200 Sicilian Kan: v1 vs v0 0-1 (adjudicated: resignation); 35 games: +13 =8 -14, score 48.6%, Elo -9.9 +- 104.1 (95% interval -115.0 to +93.3)
+[07:13:04] game 36/200 Sicilian Taimanov: v1 vs v0 1-0 (adjudicated: resignation); 36 games: +14 =8 -14, score 50.0%, Elo -0.0 +- 103.0 (95% interval -103.0 to +103.0)
+[07:13:08] game 37/200 Sicilian Najdorf: v1 vs v0 1/2-1/2 (adjudicated: move limit); 37 games: +14 =9 -14, score 50.0%, Elo -0.0 +- 100.1 (95% interval -100.1 to +100.1)
+[07:13:46] game 38/200 Sicilian Accelerated Dragon: v1 vs v0 1-0 (adjudicated: resignation); 38 games: +15 =9 -14, score 51.3%, Elo +9.1 +- 99.1 (95% interval -89.2 to +109.0)
+[07:13:47] game 39/200 Sicilian Sveshnikov: v0 vs v1 1-0 (adjudicated: resignation); 39 games: +15 =9 -15, score 50.0%, Elo -0.0 +- 98.2 (95% interval -98.2 to +98.2)
+[07:13:49] game 40/200 Sicilian Moscow: v1 vs v0 1-0 (checkmate); 40 games: +16 =9 -15, score 51.2%, Elo +8.7 +- 97.3 (95% interval -87.9 to +106.7)
+[07:13:50] game 41/200 Sicilian Accelerated Dragon: v0 vs v1 1-0 (adjudicated: resignation); 41 games: +16 =9 -16, score 50.0%, Elo -0.0 +- 96.3 (95% interval -96.3 to +96.3)
+[07:13:59] game 42/200 Sicilian Rossolimo: v1 vs v0 0-1 (adjudicated: resignation); 42 games: +16 =9 -17, score 48.8%, Elo -8.3 +- 95.5 (95% interval -104.4 to +86.6)

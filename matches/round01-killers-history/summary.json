@@ -1,0 +1,598 @@
+{
+ "match": "round01-killers-history",
+ "a": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v1",
+ "b": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v0",
+ "a_label": "v1",
+ "b_label": "v0",
+ "movetime_ms": 1000,
+ "workers": 6,
+ "planned_games": 200,
+ "started": "2026-10-06T07:00:19-07:00",
+ "finished": null,
+ "stats": {
+  "games": 42,
+  "wins": 16,
+  "draws": 9,
+  "losses": 17,
+  "score": 0.4880952380952381,
+  "score_se": 0.06836297523279729,
+  "elo": -8.27383954394042,
+  "elo_lo": -104.41098253282726,
+  "elo_hi": 86.58165493628087,
+  "elo_error": 95.49631873455407
+ },
+ "replays": [],
+ "abandoned": [],
+ "stalls": [
+  {
+   "at": "07:06:08",
+   "seconds": 1.2
+  },
+  {
+   "at": "07:06:14",
+   "seconds": 1.1
+  },
+  {
+   "at": "07:06:17",
+   "seconds": 1.3
+  },
+  {
+   "at": "07:08:35",
+   "seconds": 1.4
+  },
+  {
+   "at": "07:08:47",
+   "seconds": 5.5
+  },
+  {
+   "at": "07:09:01",
+   "seconds": 1.0
+  },
+  {
+   "at": "07:09:03",
+   "seconds": 1.9
+  },
+  {
+   "at": "07:09:07",
+   "seconds": 2.2
+  },
+  {
+   "at": "07:09:09",
+   "seconds": 1.5
+  },
+  {
+   "at": "07:09:11",
+   "seconds": 1.4
+  },
+  {
+   "at": "07:09:12",
+   "seconds": 1.5
+  },
+  {
+   "at": "07:09:15",
+   "seconds": 1.8
+  },
+  {
+   "at": "07:09:19",
+   "seconds": 1.3
+  },
+  {
+   "at": "07:09:23",
+   "seconds": 3.3
+  },
+  {
+   "at": "07:09:31",
+   "seconds": 2.1
+  },
+  {
+   "at": "07:09:40",
+   "seconds": 5.1
+  }
+ ],
+ "games": [
+  {
+   "match": "round01-killers-history",
+   "index": 0,
+   "opening": "Ruy Lopez Morphy",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 146,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 1,
+   "opening": "Ruy Lopez Morphy",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 159,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 2,
+   "opening": "Ruy Lopez Berlin",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 202,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 3,
+   "opening": "Ruy Lopez Berlin",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 127,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 4,
+   "opening": "Ruy Lopez Exchange",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 110,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 5,
+   "opening": "Ruy Lopez Exchange",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 95,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 6,
+   "opening": "Italian Giuoco Piano",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 147,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 7,
+   "opening": "Italian Giuoco Piano",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 87,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 8,
+   "opening": "Two Knights",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "adjudicated: move limit",
+   "plies": 300,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 9,
+   "opening": "Two Knights",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 97,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 10,
+   "opening": "Scotch",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 55,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 11,
+   "opening": "Scotch",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 56,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 12,
+   "opening": "Four Knights",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 183,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 13,
+   "opening": "Four Knights",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 87,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 14,
+   "opening": "Petroff",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 126,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 15,
+   "opening": "Petroff",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 130,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 16,
+   "opening": "Philidor",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 88,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 17,
+   "opening": "Philidor",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 90,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 18,
+   "opening": "Vienna",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 75,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 19,
+   "opening": "Vienna",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 63,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 20,
+   "opening": "Kings Gambit Accepted",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 170,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 21,
+   "opening": "Kings Gambit Accepted",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 111,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 22,
+   "opening": "Bishops Opening",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 49,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 23,
+   "opening": "Bishops Opening",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 119,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 24,
+   "opening": "Ponziani",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 124,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 25,
+   "opening": "Ponziani",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 61,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 26,
+   "opening": "Sicilian Najdorf",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "adjudicated: move limit",
+   "plies": 300,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 27,
+   "opening": "Sicilian Najdorf",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 101,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 28,
+   "opening": "Sicilian Dragon",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 122,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 29,
+   "opening": "Sicilian Dragon",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 96,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 30,
+   "opening": "Sicilian Scheveningen",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 138,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 31,
+   "opening": "Sicilian Scheveningen",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 113,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 32,
+   "opening": "Sicilian Taimanov",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 173,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 33,
+   "opening": "Sicilian Taimanov",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 133,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 34,
+   "opening": "Sicilian Kan",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 113,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 35,
+   "opening": "Sicilian Kan",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 79,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 36,
+   "opening": "Sicilian Sveshnikov",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 71,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 37,
+   "opening": "Sicilian Sveshnikov",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 93,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 38,
+   "opening": "Sicilian Accelerated Dragon",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 88,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 39,
+   "opening": "Sicilian Accelerated Dragon",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 87,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 40,
+   "opening": "Sicilian Rossolimo",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 89,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 42,
+   "opening": "Sicilian Moscow",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 59,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  }
+ ]
+}

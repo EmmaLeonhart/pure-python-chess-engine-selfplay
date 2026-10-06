@@ -51,6 +51,11 @@ The brief calls it a long project: keep going after each round.
   taken as fair. Round 0 averaged about 2 games a minute (faster early, slower
   on the later openings), so a 200-game match takes about 1.5-2 hours. Eight
   rounds will take most of a day.
+- **The machine is shared.** Other projects run heavy jobs on it, and the
+  runner measures scheduling stalls of up to about 5 s. They hit both
+  engines at random, so they add noise rather than bias. Games interrupted
+  by a stall are replayed (see README). The stalls are reported with each
+  match, and the README states this caveat.
 - Rounds compare each candidate against the **current best**. Rejected
   changes are dropped, and the next candidate is built on the current best.
 

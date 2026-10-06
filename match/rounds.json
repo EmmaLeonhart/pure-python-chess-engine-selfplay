@@ -1,4 +1,18 @@
 [
- {"round": "0", "match": "round00-v0-vs-v0", "candidate": "v0", "baseline": "v0",
-  "change": "none (bias check of the runner)", "kept": "n/a"}
+ {
+  "round": "0",
+  "match": "round00-v0-vs-v0",
+  "candidate": "v0",
+  "baseline": "v0",
+  "change": "none (bias check of the runner)",
+  "kept": "n/a"
+ },
+ {
+  "round": "1",
+  "match": "round01-killers-history",
+  "candidate": "v1",
+  "baseline": "v0",
+  "change": "killer moves + history heuristic for quiet-move ordering",
+  "kept": "pending"
+ }
 ]
