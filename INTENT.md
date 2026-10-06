@@ -31,7 +31,7 @@ The brief calls it a long project: keep going after each round.
 - Round 1 (killers + history) was rejected at -0.4 to +81.8 Elo. The
   pre-registered rule is applied as written, even for near misses.
 - Round 2 (full move time) was kept at +42.6 to +122.2 Elo.
-- Current best: v2. Round 3 (v3 = null-move pruning) is running.
+- Current best: v2. Round 3 (v3 = null-move pruning) was stopped by Claude Code at 24/200 games because the system was low on memory. BLOCKED-ON-USER-ACTION: it is not restarted unless Emma asks.
 - Live results are in the README table; history is in `devlog.md`.
 
 ## What supports it

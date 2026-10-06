@@ -48,3 +48,4 @@
   - 4 games replayed after stalls, 0 abandoned, 8 scheduling stalls.
   - **Kept.** Best version is now v2.
   - Froze v3 (v2 + null-move pruning, R = 2) and started round 3 (v3 vs v2).
+- 10:03 PST: round 3 was stopped by Claude Code at 24/200 games because the system was critically low on memory. The partial score was +8 =13 -3. No project processes were left running afterwards, and 9.1 GB of RAM was free at 10:03. Per the stop notice it is not restarted without the user asking, so the match waits for Emma.
