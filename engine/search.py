@@ -216,6 +216,10 @@ class Searcher:
             except Timeout:
                 while len(board.stack) > stack_len:
                     board.unmake()
+                # Root moves are searched best-first (the previous best comes from the TT), and
+                # root_best is only set after a move's search completes, so it is safe to use.
+                if self.root_best:
+                    best = self.root_best
                 break
             if self.root_best:
                 best = self.root_best
@@ -231,8 +235,5 @@ class Searcher:
                     depth, score_str, self.nodes, int(elapsed * 1000),
                     int(self.nodes / elapsed) if elapsed > 0 else 0, " ".join(move_uci(m) for m in pv)))
             if abs(score) > MATE_BOUND and depth >= MATE - abs(score):
-                break
-            # The next iteration usually costs several times this one; don't start what can't finish.
-            if movetime is not None and elapsed > movetime * 0.5:
                 break
         return best

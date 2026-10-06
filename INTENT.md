@@ -46,11 +46,12 @@ The brief calls it a long project: keep going after each round.
   session transcripts, which can't be undone; making a private repo public
   later is one command. So the repo is created **private**. If Emma confirms
   the brief, run `gh repo edit --visibility public --accept-visibility-change-consequences`.
-- How many games a match can realistically run: 200 games at 1 s/move with
-  ~60-80 moves per game is roughly 4-5 hours per match on one core. Matches
-  will run games in parallel processes to shorten that (assumption: the
-  machine has several cores and parallel games at 1 s/move are fair since
-  both sides get the same conditions).
+- Match length (assumption, now measured): games run 8 in parallel on this
+  16-core machine. Both sides play under the same conditions, so this is
+  taken as fair. Round 0 ran at about 3.3 games a minute, so a 200-game match
+  takes about an hour.
+- Rounds compare each candidate against the **current best**. Rejected
+  changes are dropped, and the next candidate is built on the current best.
 
 ## Confidence
 

@@ -61,3 +61,4 @@
 [05:13:39] game 61/200 French Rubinstein: v0-A vs v0-B 0-1 (adjudicated: resignation); 61 games: +24 =14 -23, score 50.8%, Elo +5.7 +- 77.8 (95% interval -71.8 to +83.8)
 [05:13:48] game 62/200 Caro-Kann Classical: v0-A vs v0-B 1/2-1/2 (threefold repetition); 62 games: +24 =15 -23, score 50.8%, Elo +5.6 +- 76.5 (95% interval -70.6 to +82.4)
 [05:14:25] game 63/200 French Rubinstein: v0-B vs v0-A 0-1 (adjudicated: resignation); 63 games: +25 =15 -23, score 51.6%, Elo +11.0 +- 76.1 (95% interval -64.5 to +87.7)
+[05:14:42] game 64/200 Caro-Kann Exchange: v0-A vs v0-B 0-1 (checkmate); 64 games: +25 =15 -24, score 50.8%, Elo +5.4 +- 75.7 (95% interval -70.0 to +81.4)

@@ -10,16 +10,16 @@
  "started": "2026-10-06T04:54:48-07:00",
  "finished": null,
  "stats": {
-  "games": 63,
+  "games": 64,
   "wins": 25,
   "draws": 15,
-  "losses": 23,
-  "score": 0.5158730158730159,
-  "score_se": 0.05494936165888387,
-  "elo": 11.033408652835458,
-  "elo_lo": -64.53930493753683,
-  "elo_hi": 87.6817163261992,
-  "elo_error": 76.11051063186801
+  "losses": 24,
+  "score": 0.5078125,
+  "score_se": 0.05467877999675554,
+  "elo": 5.429122875709528,
+  "elo_lo": -69.97044249941847,
+  "elo_hi": 81.35177090052836,
+  "elo_error": 75.66110669997342
  },
  "games": [
   {
@@ -776,6 +776,18 @@
    "termination": "threefold repetition",
    "plies": 127,
    "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round00-v0-vs-v0",
+   "index": 66,
+   "opening": "Caro-Kann Exchange",
+   "white": "v0-A",
+   "black": "v0-B",
+   "result": "0-1",
+   "termination": "checkmate",
+   "plies": 88,
+   "a_score": 0.0,
    "movetime_ms": 1000
   }
  ]
