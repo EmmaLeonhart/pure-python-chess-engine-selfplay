@@ -48,8 +48,9 @@ The brief calls it a long project: keep going after each round.
   the brief, run `gh repo edit --visibility public --accept-visibility-change-consequences`.
 - Match length (assumption, now measured): games run 8 in parallel on this
   16-core machine. Both sides play under the same conditions, so this is
-  taken as fair. Round 0 ran at about 3.3 games a minute, so a 200-game match
-  takes about an hour.
+  taken as fair. Round 0 averaged about 2 games a minute (faster early, slower
+  on the later openings), so a 200-game match takes about 1.5-2 hours. Eight
+  rounds will take most of a day.
 - Rounds compare each candidate against the **current best**. Rejected
   changes are dropped, and the next candidate is built on the current best.
 
