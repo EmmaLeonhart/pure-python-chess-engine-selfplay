@@ -8,18 +8,18 @@
  "workers": 6,
  "planned_games": 200,
  "started": "2026-10-06T07:00:19-07:00",
- "finished": null,
+ "finished": "2026-10-06T08:32:09-07:00",
  "stats": {
-  "games": 168,
-  "wins": 66,
-  "draws": 47,
-  "losses": 55,
-  "score": 0.5327380952380952,
-  "score_se": 0.03264051500542958,
-  "elo": 22.78135142826377,
-  "elo_lo": -21.733395645065208,
-  "elo_hi": 68.06002676147004,
-  "elo_error": 44.89671120326763
+  "games": 200,
+  "wins": 83,
+  "draws": 57,
+  "losses": 60,
+  "score": 0.5575,
+  "score_se": 0.029617878890967193,
+  "elo": 40.1326386745416,
+  "elo_lo": -0.38216288718893393,
+  "elo_hi": 81.76937082555298,
+  "elo_error": 41.07576685637096
  },
  "replays": [
   {
@@ -69,6 +69,12 @@
    "opening": "Benoni Modern",
    "attempt": 1,
    "reason": "timeout waiting for 'bestmove' after 144 plies"
+  },
+  {
+   "index": 179,
+   "opening": "Bird",
+   "attempt": 1,
+   "reason": "timeout waiting for 'bestmove' after 96 plies"
   }
  ],
  "abandoned": [],
@@ -200,6 +206,46 @@
   {
    "at": "08:02:14",
    "seconds": 1.1
+  },
+  {
+   "at": "08:14:47",
+   "seconds": 1.1
+  },
+  {
+   "at": "08:14:50",
+   "seconds": 1.4
+  },
+  {
+   "at": "08:14:57",
+   "seconds": 1.9
+  },
+  {
+   "at": "08:15:00",
+   "seconds": 2.4
+  },
+  {
+   "at": "08:18:30",
+   "seconds": 1.2
+  },
+  {
+   "at": "08:18:33",
+   "seconds": 2.1
+  },
+  {
+   "at": "08:18:42",
+   "seconds": 1.5
+  },
+  {
+   "at": "08:18:53",
+   "seconds": 4.9
+  },
+  {
+   "at": "08:20:11",
+   "seconds": 3.9
+  },
+  {
+   "at": "08:20:18",
+   "seconds": 6.8
   }
  ],
  "games": [
@@ -1645,6 +1691,18 @@
   },
   {
    "match": "round01-killers-history",
+   "index": 120,
+   "opening": "Catalan Closed",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 120,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
    "index": 121,
    "opening": "Catalan Closed",
    "white": "v0",
@@ -1665,6 +1723,66 @@
    "termination": "adjudicated: resignation",
    "plies": 100,
    "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 123,
+   "opening": "Kings Indian Classical",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 122,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 124,
+   "opening": "Kings Indian Samisch",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 89,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 125,
+   "opening": "Kings Indian Samisch",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 233,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 126,
+   "opening": "Kings Indian Fianchetto",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 142,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 127,
+   "opening": "Kings Indian Fianchetto",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "checkmate",
+   "plies": 239,
+   "a_score": 0.0,
    "movetime_ms": 1000
   },
   {
@@ -1701,6 +1819,30 @@
    "termination": "adjudicated: resignation",
    "plies": 130,
    "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 131,
+   "opening": "Grunfeld Russian",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "checkmate",
+   "plies": 110,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 132,
+   "opening": "Benoni Modern",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "fifty-move rule",
+   "plies": 290,
+   "a_score": 0.5,
    "movetime_ms": 1000
   },
   {
@@ -2161,6 +2303,18 @@
   },
   {
    "match": "round01-killers-history",
+   "index": 171,
+   "opening": "Reti",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "fifty-move rule",
+   "plies": 298,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
    "index": 172,
    "opening": "Reti Kings Indian Attack",
    "white": "v1",
@@ -2217,6 +2371,282 @@
    "termination": "threefold repetition",
    "plies": 93,
    "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 177,
+   "opening": "Larsen",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "checkmate",
+   "plies": 124,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 178,
+   "opening": "Bird",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 171,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 179,
+   "opening": "Bird",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 117,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 180,
+   "opening": "Polish",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "fifty-move rule",
+   "plies": 259,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 181,
+   "opening": "Polish",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 100,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 182,
+   "opening": "Grob",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 187,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 183,
+   "opening": "Grob",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 285,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 184,
+   "opening": "Nimzo-Larsen vs d5",
+   "white": "v1",
+   "black": "v0",
+   "result": "1/2-1/2",
+   "termination": "insufficient material",
+   "plies": 241,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 185,
+   "opening": "Nimzo-Larsen vs d5",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "checkmate",
+   "plies": 54,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 186,
+   "opening": "Sokolsky vs d5",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 151,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 187,
+   "opening": "Sokolsky vs d5",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 152,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 188,
+   "opening": "Kings Fianchetto vs e5",
+   "white": "v1",
+   "black": "v0",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 193,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 189,
+   "opening": "Kings Fianchetto vs e5",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 85,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 190,
+   "opening": "Van Geet",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 232,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 191,
+   "opening": "Van Geet",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 113,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 192,
+   "opening": "Center Game",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 240,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 193,
+   "opening": "Center Game",
+   "white": "v0",
+   "black": "v1",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 116,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 194,
+   "opening": "Danish Declined",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 101,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 195,
+   "opening": "Danish Declined",
+   "white": "v0",
+   "black": "v1",
+   "result": "1/2-1/2",
+   "termination": "adjudicated: move limit",
+   "plies": 300,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 196,
+   "opening": "Latvian Gambit",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 80,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 197,
+   "opening": "Latvian Gambit",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 117,
+   "a_score": 0.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 198,
+   "opening": "Elephant Gambit",
+   "white": "v1",
+   "black": "v0",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 160,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round01-killers-history",
+   "index": 199,
+   "opening": "Elephant Gambit",
+   "white": "v0",
+   "black": "v1",
+   "result": "1-0",
+   "termination": "adjudicated: resignation",
+   "plies": 106,
+   "a_score": 0.0,
    "movetime_ms": 1000
   }
  ]

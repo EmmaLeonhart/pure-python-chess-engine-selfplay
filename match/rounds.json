@@ -13,6 +13,14 @@
   "candidate": "v1",
   "baseline": "v0",
   "change": "killer moves + history heuristic for quiet-move ordering",
+  "kept": "no (interval lower bound -0.4)"
+ },
+ {
+  "round": "2",
+  "match": "round02-full-movetime",
+  "candidate": "v2",
+  "baseline": "v0",
+  "change": "time management: search to the deadline, keep an interrupted iteration's completed best (built on v0)",
   "kept": "pending"
  }
 ]

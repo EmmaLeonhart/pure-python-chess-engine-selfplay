@@ -33,7 +33,7 @@ def table(rounds):
         kept = r["kept"]
         if not summary.get("finished"):
             kept = "running (%d/%d games)" % (st["games"], summary["planned_games"])
-        rows.append("| %s | %s vs %s | %s | %d / %d / %d | %.1f%% | %+.0f +- %.0f (%+.0f to %+.0f) | %s |" % (
+        rows.append("| %s | %s vs %s | %s | %d / %d / %d | %.1f%% | %+.0f +- %.0f (%+.1f to %+.1f) | %s |" % (
             r["round"], r["candidate"], r["baseline"], r["change"], st["wins"], st["draws"], st["losses"],
             100 * st["score"], st["elo"], st["elo_error"], st["elo_lo"], st["elo_hi"], kept))
     return "\n".join(rows)

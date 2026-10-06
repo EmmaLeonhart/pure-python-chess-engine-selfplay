@@ -208,3 +208,49 @@
 [08:13:27] game 166/200 Kings Indian Attack vs French: v0 vs v1 0-1 (adjudicated: resignation); 166 games: +65 =46 -55, score 53.0%, Elo +21.0 +- 45.2 (95% interval -23.9 to +66.6)
 [08:13:37] game 167/200 Kings Indian Attack vs French: v1 vs v0 1/2-1/2 (threefold repetition); 167 games: +65 =47 -55, score 53.0%, Elo +20.8 +- 45.0 (95% interval -23.8 to +66.1)
 [08:14:13] game 168/200 Reti Kings Indian Attack: v0 vs v1 0-1 (checkmate); 168 games: +66 =47 -55, score 53.3%, Elo +22.8 +- 44.9 (95% interval -21.7 to +68.1)
+[08:14:35] game 169/200 Reti: v0 vs v1 1/2-1/2 (fifty-move rule); 169 games: +66 =48 -55, score 53.3%, Elo +22.6 +- 44.6 (95% interval -21.6 to +67.6)
+[08:14:47] scheduling stall: the runner was 1.1 s late
+[08:14:48] game 170/200 Larsen: v0 vs v1 0-1 (checkmate); 170 games: +67 =48 -55, score 53.5%, Elo +24.6 +- 44.6 (95% interval -19.6 to +69.5)
+[08:14:50] scheduling stall: the runner was 1.4 s late
+[08:14:57] scheduling stall: the runner was 1.9 s late
+[08:15:00] scheduling stall: the runner was 2.4 s late
+[08:15:33] game 180 (Bird) interrupted: timeout waiting for 'bestmove' after 96 plies; replaying (attempt 2 of 3)
+[08:17:38] engine start failed (attempt 1): timeout waiting for 'uciok'
+[08:17:55] game 171/200 Bird: v1 vs v0 1/2-1/2 (threefold repetition); 171 games: +67 =49 -55, score 53.5%, Elo +24.4 +- 44.3 (95% interval -19.5 to +69.1)
+[08:17:57] game 172/200 Polish: v0 vs v1 0-1 (adjudicated: resignation); 172 games: +68 =49 -55, score 53.8%, Elo +26.3 +- 44.2 (95% interval -17.5 to +71.0)
+[08:18:30] scheduling stall: the runner was 1.2 s late
+[08:18:33] scheduling stall: the runner was 2.1 s late
+[08:18:42] scheduling stall: the runner was 1.5 s late
+[08:18:53] scheduling stall: the runner was 4.9 s late
+[08:19:38] engine start failed (attempt 2): timeout waiting for 'uciok'
+[08:20:11] scheduling stall: the runner was 3.9 s late
+[08:20:18] scheduling stall: the runner was 6.8 s late
+[08:20:48] game 173/200 Nimzo-Larsen vs d5: v0 vs v1 0-1 (checkmate); 173 games: +69 =49 -55, score 54.0%, Elo +28.2 +- 44.2 (95% interval -15.5 to +72.8)
+[08:21:32] game 174/200 Grob: v1 vs v0 1/2-1/2 (insufficient material); 174 games: +69 =50 -55, score 54.0%, Elo +28.0 +- 43.9 (95% interval -15.4 to +72.4)
+[08:21:51] game 175/200 Polish: v1 vs v0 1/2-1/2 (fifty-move rule); 175 games: +69 =51 -55, score 54.0%, Elo +27.9 +- 43.6 (95% interval -15.3 to +71.9)
+[08:22:52] game 176/200 Sokolsky vs d5: v1 vs v0 1-0 (adjudicated: resignation); 176 games: +70 =51 -55, score 54.3%, Elo +29.7 +- 43.6 (95% interval -13.4 to +73.7)
+[08:22:52] game 177/200 Sokolsky vs d5: v0 vs v1 0-1 (adjudicated: resignation); 177 games: +71 =51 -55, score 54.5%, Elo +31.5 +- 43.5 (95% interval -11.5 to +75.5)
+[08:22:57] game 178/200 Kings Fianchetto vs e5: v0 vs v1 0-1 (adjudicated: resignation); 178 games: +72 =51 -55, score 54.8%, Elo +33.3 +- 43.5 (95% interval -9.7 to +77.3)
+[08:23:20] game 179/200 Grob: v0 vs v1 1/2-1/2 (insufficient material); 179 games: +72 =52 -55, score 54.7%, Elo +33.1 +- 43.2 (95% interval -9.6 to +76.8)
+[08:23:33] game 180/200 Nimzo-Larsen vs d5: v1 vs v0 1/2-1/2 (insufficient material); 180 games: +72 =53 -55, score 54.7%, Elo +32.9 +- 43.0 (95% interval -9.6 to +76.4)
+[08:24:20] game 181/200 Kings Fianchetto vs e5: v1 vs v0 0-1 (adjudicated: resignation); 181 games: +72 =53 -56, score 54.4%, Elo +30.8 +- 42.9 (95% interval -11.6 to +74.1)
+[08:24:22] game 182/200 Van Geet: v0 vs v1 1/2-1/2 (threefold repetition); 182 games: +72 =54 -56, score 54.4%, Elo +30.6 +- 42.6 (95% interval -11.6 to +73.7)
+[08:24:52] game 183/200 Center Game: v0 vs v1 0-1 (adjudicated: resignation); 183 games: +73 =54 -56, score 54.6%, Elo +32.4 +- 42.6 (95% interval -9.7 to +75.4)
+[08:24:53] game 184/200 Danish Declined: v1 vs v0 1-0 (adjudicated: resignation); 184 games: +74 =54 -56, score 54.9%, Elo +34.1 +- 42.5 (95% interval -7.9 to +77.1)
+[08:25:22] game 185/200 Latvian Gambit: v1 vs v0 1-0 (adjudicated: resignation); 185 games: +75 =54 -56, score 55.1%, Elo +35.8 +- 42.5 (95% interval -6.1 to +78.8)
+[08:26:05] game 186/200 Van Geet: v1 vs v0 1-0 (adjudicated: resignation); 186 games: +76 =54 -56, score 55.4%, Elo +37.5 +- 42.4 (95% interval -4.4 to +80.5)
+[08:26:11] game 187/200 Center Game: v1 vs v0 1-0 (adjudicated: resignation); 187 games: +77 =54 -56, score 55.6%, Elo +39.2 +- 42.4 (95% interval -2.6 to +82.1)
+[08:26:25] game 188/200 Latvian Gambit: v0 vs v1 1-0 (adjudicated: resignation); 188 games: +77 =54 -57, score 55.3%, Elo +37.1 +- 42.3 (95% interval -4.6 to +79.9)
+[08:26:41] game 189/200 Elephant Gambit: v0 vs v1 1-0 (adjudicated: resignation); 189 games: +77 =54 -58, score 55.0%, Elo +35.0 +- 42.2 (95% interval -6.6 to +77.8)
+[08:26:55] game 190/200 Elephant Gambit: v1 vs v0 1-0 (adjudicated: resignation); 190 games: +78 =54 -58, score 55.3%, Elo +36.7 +- 42.1 (95% interval -4.9 to +79.4)
+[08:27:19] game 191/200 Kings Indian Samisch: v1 vs v0 1-0 (checkmate); 191 games: +79 =54 -58, score 55.5%, Elo +38.4 +- 42.1 (95% interval -3.2 to +81.0)
+[08:27:59] game 192/200 Kings Indian Classical: v0 vs v1 0-1 (adjudicated: resignation); 192 games: +80 =54 -58, score 55.7%, Elo +40.0 +- 42.0 (95% interval -1.5 to +82.6)
+[08:28:18] game 193/200 Catalan Closed: v1 vs v0 1-0 (adjudicated: resignation); 193 games: +81 =54 -58, score 56.0%, Elo +41.6 +- 42.0 (95% interval +0.2 to +84.2)
+[08:28:27] game 194/200 Danish Declined: v0 vs v1 1/2-1/2 (adjudicated: move limit); 194 games: +81 =55 -58, score 55.9%, Elo +41.4 +- 41.8 (95% interval +0.2 to +83.8)
+[08:29:18] game 195/200 Kings Indian Fianchetto: v1 vs v0 0-1 (adjudicated: resignation); 195 games: +81 =55 -59, score 55.6%, Elo +39.4 +- 41.7 (95% interval -1.8 to +81.6)
+[08:29:21] game 196/200 Grunfeld Russian: v0 vs v1 0-1 (checkmate); 196 games: +82 =55 -59, score 55.9%, Elo +41.0 +- 41.6 (95% interval -0.1 to +83.2)
+[08:29:21] game 197/200 Kings Indian Samisch: v0 vs v1 1/2-1/2 (insufficient material); 197 games: +82 =56 -59, score 55.8%, Elo +40.7 +- 41.4 (95% interval -0.1 to +82.7)
+[08:29:59] game 198/200 Bird: v0 vs v1 0-1 (adjudicated: resignation); 198 games: +83 =56 -59, score 56.1%, Elo +42.3 +- 41.4 (95% interval +1.6 to +84.3)
+[08:30:04] game 199/200 Kings Indian Fianchetto: v0 vs v1 1-0 (checkmate); 199 games: +83 =56 -60, score 55.8%, Elo +40.3 +- 41.3 (95% interval -0.4 to +82.2)
+[08:32:09] game 200/200 Benoni Modern: v1 vs v0 1/2-1/2 (fifty-move rule); 200 games: +83 =57 -60, score 55.8%, Elo +40.1 +- 41.1 (95% interval -0.4 to +81.8)
+FINAL round01-killers-history (v1 vs v0): 200 games: +83 =57 -60, score 55.8%, Elo +40.1 +- 41.1 (95% interval -0.4 to +81.8); 9 replayed, 0 abandoned, 42 scheduling stalls

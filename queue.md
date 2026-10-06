@@ -2,5 +2,7 @@
 
 Concrete next steps. Items are deleted when done (and logged in `devlog.md`).
 
-- Round 1 (started 06:59 PST): `matches/round01-killers-history`, v1 (killers + history) vs v0, 200 games at 1 s/move, with the stall-tolerant runner. Record the result in `match/rounds.json`, re-render the README table, and log it; if rejected, reset `engine/` to v0.
-- Round 2 candidate: time management. It is written in `engine/` on top of v1: search until the deadline instead of stopping at half the budget, and keep a timed-out iteration's completed root best. Freeze it as `versions/v2` once round 1 decides the base. If v1 is rejected, re-apply the change to v0's search.py first.
+- Round 2 (started 08:32 PST, not a tracked task, so check `matches/round02-full-movetime/log.txt` for the FINAL line): v2 (v0 + full move time) vs v0. Record the result in `match/rounds.json`, re-render the README, and log it. If kept, the best version is v2; if not, `engine/` goes back to v0.
+- Round 3 candidate: null-move pruning (R = 2, not in check, not in a pawn-only endgame for the side to move, not at the root, depth >= 3), built on the round 2 winner and frozen as v3.
+- Round 4 candidate: late move reductions for quiet moves after the first few, with a re-search on fail-high.
+- Later: retry killers + history on top of the new best (it scored +40 +- 41 in round 1, just short of the rule).

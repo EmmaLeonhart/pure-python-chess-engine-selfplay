@@ -37,3 +37,9 @@
   - Default parallelism is now 6 games.
   - Test added: `tests/fixtures/silent_engine`, a fake engine that never answers `go`; the test checks the game is replayed and then abandoned.
   - Round 0's 10 forfeits are left as recorded. Both sides were v0, so they don't bias a self-match.
+- 08:32 PST: round 1 finished (v1 = killers + history, vs v0).
+  - Result: +83 =57 -60, score 55.8%, Elo +40 +- 41, 95% interval **-0.4 to +81.8**.
+  - The runner replayed 9 games after stalls (6 of them during a machine-wide stall around 07:40), abandoned none, and logged 42 scheduling stalls.
+  - **Rejected** under the fixed rule, since the lower bound is not above 0. It is very likely a real gain, but the rule was set in advance and is applied as written.
+  - `engine/` reset to v0, and the time-management change re-applied on top as **v2** (frozen). Round 2 (v2 vs v0) started at 08:32.
+  - Killers + history stay a candidate to retry later on top of a stronger base, as a new round with its own match.
