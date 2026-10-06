@@ -231,3 +231,11 @@ deferred — DO IT NOW. Bare "deliberately not done" / "blocked on <person>" is 
 
 # currentDate
 Today's date is 2026-10-06.
+
+## This project: pure-Python chess engine (conventions)
+- Standard library only, in the engine and the match runner. Tests use `unittest`
+  (`python -m unittest discover -s tests -t .`); `PERFT_SLOW=1` runs deep perft.
+- `engine/` is the current development engine; `chess_engine.py` is its UCI entry point.
+- Frozen versions live in `versions/vN/` (a copy of `engine/` + `chess_engine.py`) and are
+  never edited after freezing; matches compare a candidate against the current best.
+- Moves are ints (from | to<<7 | promo<<14 | flag<<17) on a 0x88 board; see `engine/board.py`.

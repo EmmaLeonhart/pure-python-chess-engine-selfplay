@@ -2,8 +2,8 @@
 
 Concrete next steps. Items are deleted when done (and logged in `devlog.md`).
 
-- Board representation (`engine/board.py`): 0x88 or 10x12 mailbox, FEN in/out, make/unmake with castling, en passant, promotion, Zobrist hashing.
-- Legal move generation + `tests/test_perft.py`: start position (d4 = 197281) plus Kiwipete and perft positions 3-6 from the Chess Programming Wiki at depth 3-4; mark depth-5+ cases as slow.
-- CI: `.github/workflows/ci.yml` running `python -m unittest` on push/PR (fast perft only).
-- Search (`engine/search.py`): negamax alpha-beta, iterative deepening, transposition table, quiescence search, time control by deadline; material + piece-square evaluation in `engine/evaluate.py`.
-- UCI loop (`engine/uci.py`, entry point `chess_engine.py`): uci, isready, ucinewgame, position, go (movetime/wtime/btime/depth), stop, quit; a test that drives it over pipes.
+- Opening book (`match/openings.txt`): 100 distinct, well-known opening lines of 4-8 plies, as UCI moves from the start position, each checked for legality by a test. Each opening is played once with each colour, so a match is 200 games.
+- Match runner (`match/run_match.py`): starts both engines as UCI subprocesses, `go movetime 1000`, games in parallel worker threads (default: half the CPU cores); ends games on mate, stalemate, threefold repetition, 50-move rule and insufficient material, and adjudicates a resignation when both engines report |score| >= 1000 cp for 4 consecutive moves each, or a draw at 300 plies; writes a PGN and a JSON summary to `matches/<name>/`.
+- Statistics (`match/stats.py`): score, Elo difference, 95% interval from the per-game score variance; unit tests on known W/D/L cases.
+- Write the acceptance rule into README before round 1: keep a change only if the lower end of its 95% Elo interval is above 0.
+- Freeze the baseline as `versions/v0/` (a copy of `engine/` and `chess_engine.py`); a smoke match of 4 games at 0.1 s/move to check the runner end to end.
