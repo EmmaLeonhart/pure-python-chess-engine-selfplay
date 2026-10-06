@@ -43,3 +43,8 @@
   - **Rejected** under the fixed rule, since the lower bound is not above 0. It is very likely a real gain, but the rule was set in advance and is applied as written.
   - `engine/` reset to v0, and the time-management change re-applied on top as **v2** (frozen). Round 2 (v2 vs v0) started at 08:32.
   - Killers + history stay a candidate to retry later on top of a stronger base, as a new round with its own match.
+- 09:52 PST: round 2 finished (v2 = full move time, vs v0).
+  - Result: +89 =68 -43, score 61.5%, Elo +81 +- 40, 95% interval +42.6 to +122.2.
+  - 4 games replayed after stalls, 0 abandoned, 8 scheduling stalls.
+  - **Kept.** Best version is now v2.
+  - Froze v3 (v2 + null-move pruning, R = 2) and started round 3 (v3 vs v2).

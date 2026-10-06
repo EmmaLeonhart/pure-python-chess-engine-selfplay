@@ -21,6 +21,14 @@
   "candidate": "v2",
   "baseline": "v0",
   "change": "time management: search to the deadline, keep an interrupted iteration's completed best (built on v0)",
+  "kept": "yes"
+ },
+ {
+  "round": "3",
+  "match": "round03-null-move",
+  "candidate": "v3",
+  "baseline": "v2",
+  "change": "null-move pruning (R=2)",
   "kept": "pending"
  }
 ]

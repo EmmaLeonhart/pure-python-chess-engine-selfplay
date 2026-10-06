@@ -4150,3 +4150,465 @@ h2g2 c5d4 64. g2h2 g8f7 65. h2g2 f7e6 66. g2g3 e6e5 67. g3f3 d4b6 68. f3g3 e5e4
 69. g3g2 e4f4 70. g2h3 f4f3 71. g4g5 f6g5 72. h3h2 b6c7 73. h2g1 g5g4 74. g1f1
 c7a5 75. f1g1 g4g3 0-1
 
+[Event "round02-full-movetime"]
+[Round "189"]
+[White "v2"]
+[Black "v0"]
+[Result "0-1"]
+[Opening "Kings Fianchetto vs e5"]
+[Termination "checkmate"]
+[TimeControl "movetime 1000 ms"]
+
+1. g2g3 e7e5 2. f1g2 d7d5 3. d2d3 g8f6 4. g1f3 b8c6 5. b1d2 c8f5 6. e1g1 f8c5
+7. f3g5 f6g4 8. d2b3 c5f2 9. f1f2 g4f2 10. g1f2 h7h6 11. g5f3 e8g8 12. f2g1
+d8f6 13. e2e3 f8e8 14. c1d2 a8d8 15. d2c3 f5g6 16. d3d4 e5e4 17. f3e5 c6e5 18.
+d4e5 f6e6 19. b3c5 e6c6 20. d1d4 c6b6 21. e5e6 f7f6 22. g3g4 b6c6 23. g4g5 h6g5
+24. c5a4 e8e6 25. d4a7 b7b6 26. g2h3 f6f5 27. a7a6 d8a8 28. a6f1 g5g4 29. a4b6
+c6b6 30. h3g2 b6e3 31. f1f2 e3f2 32. g1f2 f5f4 33. f2g1 f4f3 34. g2f1 e4e3 35.
+f1d3 f3f2 36. g1g2 a8f8 37. c3d4 g6d3 38. c2d3 f8f4 39. d4c5 e6f6 40. c5e3
+f2f1q 41. a1f1 f4f1 42. e3a7 f6f3 43. a7d4 f1c1 44. d4g7 c1c2 45. g2g1 f3d3 46.
+g7c3 d3d1 47. c3e1 d1e1 0-1
+
+[Event "round02-full-movetime"]
+[Round "190"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "Kings Fianchetto vs e5"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. g2g3 e7e5 2. f1g2 d7d5 3. d2d3 g8f6 4. g1f3 b8c6 5. b1d2 c8f5 6. e1g1 f8c5
+7. d2b3 c5d6 8. d3d4 e5e4 9. f3d2 e8g8 10. e2e3 f8e8 11. b3c5 d6c5 12. d4c5
+d8e7 13. d2b3 f5g6 14. c1d2 c6e5 15. d2c3 a8d8 16. f1e1 e5c6 17. d1e2 f6d7 18.
+e2b5 d8b8 19. a1d1 a7a6 20. b5e2 d7c5 21. d1d5 c5a4 22. e2d2 a4c3 23. d2c3 e7e6
+24. e1d1 e6g4 25. c3c4 g6f5 26. h2h3 g4g6 27. b3d4 c6d4 28. d5d4 b7b5 29. c4c5
+h7h5 30. d4d5 f5e6 31. d5g5 g6f6 32. g5h5 e6a2 33. c5c7 b8c8 34. c7f4 f6f4 35.
+g3f4 c8c2 36. g2e4 c2b2 37. e4h7 g8f8 38. d1d6 e8e6 39. d6d8 f8e7 40. d8g8 g7g6
+41. h5e5 a2c4 42. e3e4 b2b1 43. g1g2 c4d3 44. e5e6 e7e6 45. g8e8 e6f6 46. f4f5
+g6g5 47. h7g8 f6g7 48. g2h2 b5b4 49. h2g3 b4b3 50. g3g2 b3b2 51. f5f6 g7f6 52.
+e4e5 f6g7 53. e8b8 d3b5 54. e5e6 b1g1 55. g2g1 b2b1q 56. g1h2 b1e1 57. b8b5
+e1f2 58. h2h1 a6b5 59. g8f7 f2g3 60. h3h4 g5h4 61. f7e8 g3f3 62. h1g1 h4h3 63.
+e8c6 f3c6 64. g1f2 h3h2 65. e6e7 h2h1q 66. e7e8n 0-1
+
+[Event "round02-full-movetime"]
+[Round "188"]
+[White "v0"]
+[Black "v2"]
+[Result "1/2-1/2"]
+[Opening "Sokolsky vs d5"]
+[Termination "stalemate"]
+[TimeControl "movetime 1000 ms"]
+
+1. b2b4 d7d5 2. c1b2 g8f6 3. e2e3 e7e6 4. a2a3 c7c5 5. b4c5 f8c5 6. f1b5 c8d7
+7. b5d7 b8d7 8. d2d4 d8b6 9. b2c3 c5d6 10. g1f3 b6a6 11. b1d2 e8g8 12. d1c1
+a6c6 13. c1b2 f8c8 14. c3b4 d6b4 15. b2b4 c6c2 16. b4b7 c8b8 17. b7a6 f6e4 18.
+a6a5 a7a6 19. a3a4 b8b2 20. a1d1 b2a2 21. e1g1 a2a4 22. d1c1 e4d2 23. a5d2 c2d2
+24. f3d2 e6e5 25. c1c7 a8d8 26. f1b1 g8f8 27. d2f3 e5e4 28. f3e5 d7e5 29. d4e5
+h7h5 30. b1f1 f8g8 31. c7b7 a6a5 32. b7e7 a4a2 33. e7c7 d8e8 34. f2f3 e4f3 35.
+f1f3 a2a1 36. g1f2 e8e5 37. c7f7 e5g5 38. f3f5 a1a2 39. f2f1 a2g2 40. f7f8 g8h7
+41. f5g5 g2g5 42. f8a8 g5f5 43. f1g1 a5a4 44. a8a4 f5g5 45. g1h1 g5e5 46. a4a5
+h5h4 47. e3e4 e5e4 48. a5d5 e4c4 49. d5h5 h7g8 50. h1g2 g7g6 51. h5g5 g8h7 52.
+g5e5 c4c2 53. g2h1 h4h3 54. e5e7 h7g8 55. e7e1 g8f8 56. e1g1 f8g7 57. g1d1 g7h7
+58. d1d7 h7g8 59. d7d8 g8f7 60. d8d7 f7f8 61. d7d8 f8e7 62. d8d1 c2c4 63. d1f1
+e7e8 64. h1g1 g6g5 65. g1h1 e8e7 66. f1g1 e7f6 67. g1f1 c4f4 68. f1d1 f6g7 69.
+d1g1 g7g6 70. g1g3 f4f1 71. g3g1 f1g1 72. h1g1 g6h6 73. g1f2 g5g4 74. f2g3 h6g5
+75. g3f2 g5g6 76. f2g3 g6f5 77. g3f2 f5f4 78. f2g1 f4f3 79. g1f1 f3e3 80. f1g1
+e3e2 81. g1h1 e2f3 82. h1g1 f3e3 83. g1f1 g4g3 84. f1g1 e3f4 85. h2g3 f4g3 86.
+g1h1 h3h2 1/2-1/2
+
+[Event "round02-full-movetime"]
+[Round "191"]
+[White "v2"]
+[Black "v0"]
+[Result "1-0"]
+[Opening "Van Geet"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. b1c3 d7d5 2. e2e4 d5d4 3. c3e2 e7e5 4. e2g3 c8e6 5. d1h5 b8d7 6. f1b5 c7c6
+7. b5d3 g8f6 8. h5e2 d8a5 9. a2a3 f8d6 10. g1f3 e8g8 11. e1g1 c6c5 12. f3g5
+e6g4 13. g5f3 f8e8 14. d3c4 d7b6 15. d2d3 b6c4 16. d3c4 a5b6 17. a1b1 g4f3 18.
+e2f3 e8e6 19. g3f5 b6c6 20. f3g3 g7g6 21. f5d6 e6d6 22. f1e1 f6e4 23. g3d3 f7f5
+24. f2f3 e4f6 25. e1e5 a8d8 26. c1f4 d6e6 27. b1e1 d8e8 28. e5e6 e8e6 29. e1e6
+c6e6 30. f4g3 e6e3 31. d3e3 d4e3 32. g3d6 f6d7 33. f3f4 a7a6 34. h2h3 d7b6 35.
+d6c5 b6c4 36. b2b3 b7b6 37. b3c4 b6c5 38. g1f1 h7h6 39. f1e2 g6g5 40. e2e3 g8h8
+41. f4g5 h6g5 42. h3h4 g5h4 43. e3f4 h8g8 44. f4f5 g8f7 45. a3a4 f7e7 46. f5g4
+e7f6 47. g4h4 f6e5 48. g2g4 e5f6 49. h4h5 f6f7 50. h5h6 f7g8 51. g4g5 g8h8 52.
+g5g6 h8g8 53. g6g7 g8f7 54. h6h7 f7e7 55. g7g8q e7d7 1-0
+
+[Event "round02-full-movetime"]
+[Round "186"]
+[White "v0"]
+[Black "v2"]
+[Result "1/2-1/2"]
+[Opening "Nimzo-Larsen vs d5"]
+[Termination "threefold repetition"]
+[TimeControl "movetime 1000 ms"]
+
+1. b2b3 d7d5 2. c1b2 g8f6 3. g1f3 e7e6 4. e2e3 f8e7 5. f1b5 b8d7 6. b1c3 a7a6
+7. b5d7 c8d7 8. d2d4 e8g8 9. e1g1 d7c6 10. f3e5 d8d6 11. e5c6 d6c6 12. d1d3
+e7d6 13. f1e1 e6e5 14. e3e4 d5e4 15. c3e4 f6e4 16. d3e4 c6e4 17. e1e4 e5d4 18.
+b2d4 f8e8 19. e4g4 d6e5 20. d4e5 e8e5 21. g4c4 a8c8 22. c4b4 c8e8 23. a1f1 b7b5
+24. a2a4 b5a4 25. b3a4 e5e1 26. b4b7 c7c5 27. b7c7 e1e4 28. a4a5 e4c4 29. f1c1
+c4c2 30. c1f1 e8a8 31. f1e1 h7h6 32. h2h4 c5c4 33. e1e7 a8f8 34. h4h5 c4c3 35.
+c7a7 c2c1 36. g1h2 c1a1 37. a7c7 a1a5 38. c7c3 a5h5 39. h2g1 h5d5 40. c3c1 d5d2
+41. e7a7 d2a2 42. a7e7 f8d8 43. e7a7 d8e8 44. c1d1 e8c8 45. d1f1 c8f8 46. f1e1
+f8b8 47. e1d1 b8e8 48. a7c7 a2b2 49. c7a7 b2b6 50. d1a1 e8e6 51. a7a8 g8h7 52.
+a8a7 e6f6 53. a7e7 b6b2 54. a1f1 b2c2 55. e7e8 f6c6 56. e8e7 c6c7 57. e7c7 c2c7
+58. f1a1 c7c6 59. a1b1 c6c8 60. b1a1 c8a8 61. a1e1 h7g8 62. e1a1 a6a5 63. a1a4
+f7f5 64. a4f4 g7g6 65. f4h4 h6h5 66. h4d4 a8e8 67. d4d6 g8h7 68. d6d7 h7h8 69.
+d7f7 e8e1 70. g1h2 e1f1 71. f2f3 h5h4 72. f7a7 f1a1 73. a7a8 h8g7 74. a8a7 g7h6
+75. a7a8 g6g5 76. a8c8 f5f4 77. c8c6 h6h5 78. c6c7 a5a4 79. c7c8 h5h6 80. c8c6
+h6h7 81. c6c5 h7g6 82. c5c6 g6g7 83. c6c7 g7f6 84. c7c6 f6f7 85. c6c5 a4a3 86.
+c5g5 a3a2 87. g5a5 f7g6 88. a5a8 g6f6 89. a8a6 f6f5 90. a6a4 f5e6 91. a4a7 e6d5
+92. a7a6 d5c5 93. a6a8 c5c6 94. a8a6 c6c7 95. a6a7 c7b6 96. a7a4 b6b5 97. a4a7
+b5c4 98. a7a8 c4c3 99. a8c8 c3b2 100. c8b8 b2c2 101. b8c8 c2d3 102. c8d8 d3e3
+103. d8a8 e3f2 104. a8a6 f2e2 105. a6a7 e2d3 106. a7a4 d3c3 107. a4a8 c3c4 108.
+a8a7 c4b3 109. a7b7 b3a4 110. b7a7 a4b4 111. a7a6 b4b3 112. a6b6 b3c4 113. b6a6
+c4b4 114. a6a7 b4b5 115. a7a3 b5c6 116. a3a6 c6b7 117. a6a5 b7c8 118. a5a7 c8d8
+119. a7a4 d8e8 120. a4a7 e8f8 121. a7a5 f8g7 122. a5a4 g7h7 123. a4a7 h7g8 124.
+a7a8 g8g7 125. a8a4 h4h3 126. g2h3 g7h6 127. a4a7 h6h5 128. a7a8 h5g6 129. a8a6
+g6f7 130. h2g2 f7g7 131. a6a5 g7h6 132. g2h2 h6h7 133. a5a7 h7h6 134. a7a5 h6g7
+135. a5a4 a1f1 136. a4a7 g7g8 137. a7a8 g8h7 138. a8a7 h7g8 139. a7a8 g8h7 140.
+a8a7 h7g8 1/2-1/2
+
+[Event "round02-full-movetime"]
+[Round "195"]
+[White "v2"]
+[Black "v0"]
+[Result "1-0"]
+[Opening "Danish Declined"]
+[Termination "checkmate"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. d2d4 e5d4 3. c2c3 d7d5 4. e4d5 g8f6 5. g1f3 f6d5 6. c3d4 b8c6
+7. b1c3 d5c3 8. b2c3 c8e6 9. f1b5 d8d5 10. d1d3 e8c8 11. e1g1 c8b8 12. c3c4
+d5f5 13. d3f5 e6f5 14. b5c6 b7c6 15. f3e5 d8e8 16. c1e3 f5g6 17. e5c6 b8a8 18.
+d4d5 g6d3 19. f1c1 f8a3 20. c1c3 a3b2 21. c3d3 b2a1 22. d3a3 a8b7 23. a3a7 b7c8
+24. a7a8 c8b7 25. a8a5 a1f6 26. a5a7 b7c8 27. c4c5 h8g8 28. h2h3 g7g5 29. a7a8
+c8b7 30. a8a7 b7c8 31. d5d6 f6d8 32. c6d8 c8d8 33. c5c6 c7d6 34. e3b6 d8c8 35.
+a7a8 1-0
+
+[Event "round02-full-movetime"]
+[Round "187"]
+[White "v2"]
+[Black "v0"]
+[Result "1/2-1/2"]
+[Opening "Sokolsky vs d5"]
+[Termination "fifty-move rule"]
+[TimeControl "movetime 1000 ms"]
+
+1. b2b4 d7d5 2. c1b2 g8f6 3. e2e3 e7e6 4. a2a3 c7c5 5. b4c5 f8c5 6. f1b5 c8d7
+7. b5d7 b8d7 8. d2d4 d8b6 9. b2c3 c5d6 10. g1f3 b6a6 11. b1d2 e8g8 12. d1c1
+a6c6 13. c1b2 f8c8 14. c3b4 d6b4 15. b2b4 c6c2 16. b4b7 c8b8 17. b7a6 f6e4 18.
+a6a5 b8b2 19. a1d1 e4c3 20. e1g1 c3d1 21. a5a6 d1c3 22. a6d6 a8d8 23. f1e1 b2b8
+24. d6e7 c2f5 25. e7d6 b8c8 26. d6a6 c8a8 27. a6c6 f5d3 28. h2h3 d7f6 29. c6c5
+c3b5 30. a3a4 b5c3 31. a4a5 d8e8 32. c5d6 c3e2 33. g1h2 a7a6 34. d6c7 e8f8 35.
+c7b7 e2c3 36. h2g1 f6e4 37. d2e4 c3e4 38. b7c7 a8e8 39. f3e5 d3d2 40. e1f1 h7h6
+41. e5d7 e8e7 42. d7f6 e4f6 43. c7e7 d2a5 44. f1b1 f6e4 45. b1d1 f8c8 46. e7d7
+a5c3 47. d7b7 c3c2 48. d1f1 c2c4 49. f1e1 c8e8 50. b7b2 e4c3 51. b2c2 e6e5 52.
+d4e5 e8e5 53. c2b2 e5e8 54. b2c2 e8d8 55. h3h4 h6h5 56. f2f4 d8e8 57. f4f5 e8e5
+58. g2g3 c3e4 59. c2c4 d5c4 60. e1a1 e4c5 61. a1c1 e5e3 62. c1c4 c5e4 63. c4c8
+g8h7 64. c8c7 e3g3 65. g1h2 g3g4 66. c7f7 g4h4 67. h2g1 h4g4 68. g1h1 h7g8 69.
+f7a7 e4g3 70. h1h2 g3f5 71. a7a8 g8h7 72. a8a6 h5h4 73. a6a7 f5d6 74. a7d7 g4d4
+75. h2g1 d4d2 76. d7d8 h4h3 77. g1h1 g7g5 78. d8d7 h7h6 79. d7d8 g5g4 80. d8h8
+h6g7 81. h8h4 d2d1 82. h1h2 g4g3 83. h2g3 d6f5 84. g3h3 d1h1 85. h3g2 h1h4 86.
+g2g1 g7h8 87. g1g2 h8g8 88. g2g1 h4g4 89. g1h1 f5e3 90. h1h2 g4f4 91. h2g1 f4f1
+92. g1h2 f1c1 93. h2h3 c1c2 94. h3h4 c2e2 95. h4g3 e3d5 96. g3h3 e2f2 97. h3g3
+f2c2 98. g3f3 d5e7 99. f3e3 e7c6 100. e3f3 c6e5 101. f3g3 c2d2 102. g3h3 d2f2
+103. h3g3 f2c2 104. g3h3 e5c6 105. h3h4 c6d4 106. h4g3 c2d2 107. g3f4 d2d3 108.
+f4e4 d3d1 109. e4e3 d4e6 110. e3f2 d1d2 111. f2f1 e6f4 112. f1e1 d2b2 113. e1d1
+f4e2 114. d1e1 b2c2 115. e1f1 e2f4 116. f1e1 c2c8 117. e1f2 c8c3 118. f2f1 c3c1
+119. f1f2 f4d5 120. f2e2 c1h1 121. e2d2 d5b6 122. d2c2 h1h2 123. c2d1 b6c4 124.
+d1e1 c4d2 125. e1d1 d2b3 126. d1e1 b3d4 127. e1f1 d4e2 128. f1e1 e2f4 129. e1d1
+h2b2 130. d1c1 f4d3 131. c1d1 d3e5 132. d1c1 e5c4 133. c1d1 b2g2 134. d1c1 c4e5
+135. c1b1 g2g1 1/2-1/2
+
+[Event "round02-full-movetime"]
+[Round "192"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "Van Geet"]
+[Termination "checkmate"]
+[TimeControl "movetime 1000 ms"]
+
+1. b1c3 d7d5 2. e2e4 d5d4 3. c3e2 e7e5 4. e2g3 c8e6 5. g1f3 b8c6 6. f1b5 d8f6
+7. e1g1 g8e7 8. d2d3 e6g4 9. c1g5 g4f3 10. d1d2 f6d6 11. g2f3 h7h6 12. g5e7
+f8e7 13. g3f5 d6g6 14. g1h1 e8f8 15. f5e7 c6e7 16. f3f4 g6b6 17. b5c4 e7c6 18.
+f4e5 c6e5 19. c2c3 e5c4 20. d3c4 c7c5 21. c3d4 c5d4 22. d2c2 a8c8 23. h1g1 b6g6
+24. g1h1 g6c6 25. f1c1 c8e8 26. c1e1 f7f5 27. a1d1 e8e4 28. e1e4 d4d3 29. c2d3
+f8g8 30. f2f3 f5e4 31. f3e4 g8h7 32. d3d5 h8e8 33. d5c6 b7c6 34. d1e1 h7g8 35.
+c4c5 e8e5 36. b2b4 a7a5 37. a2a3 e5h5 38. e4e5 a5b4 39. e5e6 g8f8 40. e6e7 f8e8
+41. a3b4 h5h4 42. e1g1 h4b4 43. g1g7 b4c4 44. h2h3 c4c5 45. g7h7 c5c3 46. h1h2
+c6c5 47. h7g7 c3e3 48. g7g6 e8e7 49. g6h6 c5c4 50. h6a6 e3e2 51. h2g1 c4c3 52.
+a6a7 e7d8 53. a7a1 c3c2 54. a1f1 e2d2 55. f1f8 d8c7 56. f8f1 d2d1 57. g1g2 d1f1
+58. g2f1 c2c1q 59. f1f2 c1f4 60. f2g2 c7b8 61. g2h1 f4g3 62. h3h4 g3h4 63. h1g1
+h4d4 64. g1g2 d4d2 65. g2h1 d2e2 66. h1g1 e2f3 67. g1h2 f3f1 68. h2g3 f1e2 69.
+g3h3 e2f2 70. h3g4 f2e3 71. g4h4 e3f3 72. h4g5 f3e4 73. g5h6 e4f5 74. h6g7 f5h5
+75. g7f6 h5d5 76. f6g7 d5d7 77. g7h8 d7e8 78. h8h7 e8c6 79. h7g7 c6e6 80. g7h8
+e6e5 81. h8g8 e5c7 82. g8h8 c7e7 83. h8g8 e7g5 84. g8h7 b8c8 85. h7h8 c8d8 86.
+h8h7 d8e8 87. h7h8 e8f8 88. h8h7 g5g7 0-1
+
+[Event "round02-full-movetime"]
+[Round "194"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "Center Game"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. d2d4 e5d4 3. d1d4 b8c6 4. d4e3 g8f6 5. g1f3 f8e7 6. b1c3 d7d5
+7. f1b5 d5e4 8. b5c6 b7c6 9. c3e4 e8g8 10. e1g1 c8f5 11. f3g5 f6d5 12. e3f3
+f5g6 13. f3g3 d8d7 14. g3e5 f7f6 15. e5e6 d7e6 16. g5e6 g6e4 17. c2c4 d5b6 18.
+e6f8 a8f8 19. b2b3 e7d6 20. c1e3 c6c5 21. f1e1 f6f5 22. a1d1 f8e8 23. e3d2 f5f4
+24. e1e2 e4g6 25. e2e8 g6e8 26. d2c3 e8g6 27. h2h3 b6d7 28. d1e1 a7a6 29. a2a4
+g8f8 30. e1e2 f8f7 31. a4a5 f7f8 32. e2d2 f8g8 33. d2e2 d7b8 34. c3e5 b8c6 35.
+e5d6 c7d6 36. e2e6 c6a5 37. e6d6 a5b3 38. d6a6 g6e4 39. a6e6 e4d3 40. e6e8 g8f7
+41. e8e5 g7g6 42. e5g5 h7h5 43. g5e5 h5h4 44. g1h2 f7f6 45. e5e8 g6g5 46. e8c8
+d3c4 47. c8c7 c4f7 48. h2h1 f6g7 49. h1g1 c5c4 50. c7d7 g7g8 51. d7d8 g8h7 52.
+d8d7 h7g7 53. d7c7 g7g8 54. c7c8 g8h7 55. c8c7 h7g6 56. c7c6 g6f5 57. c6c7 f7e6
+58. c7g7 b3d4 59. g7c7 c4c3 60. g2g4 h4g3 61. f2g3 f4g3 62. c7c5 f5f4 63. g1g2
+c3c2 64. h3h4 d4e2 65. h4g5 e6d5 66. c5d5 c2c1q 67. d5d4 e2d4 68. g5g6 c1d2 69.
+g2g1 d4f3 0-1
+
+[Event "round02-full-movetime"]
+[Round "199"]
+[White "v2"]
+[Black "v0"]
+[Result "1-0"]
+[Opening "Elephant Gambit"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. g1f3 d7d5 3. e4d5 e5e4 4. d1e2 g8f6 5. b1c3 d8e7 6. f3g5 c8g4
+7. e2c4 g4f5 8. c4b5 b8d7 9. d5d6 e7e5 10. b5b7 a8b8 11. d6c7 b8b7 12. c7c8q
+e8e7 13. c8b7 h7h6 14. g5h3 a7a5 15. f1b5 g7g5 16. e1g1 g5g4 17. d2d4 e4d3 18.
+c1f4 e5c5 19. f1e1 f5e6 20. b5d7 f6d7 21. c3d5 e7e8 22. b7a8 d7b8 23. a8b8 e8d7
+24. b8b7 d7d8 25. f4c7 d8d7 26. c7a5 d7d6 27. a5c7 d6d7 1-0
+
+[Event "round02-full-movetime"]
+[Round "193"]
+[White "v2"]
+[Black "v0"]
+[Result "1/2-1/2"]
+[Opening "Center Game"]
+[Termination "threefold repetition"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. d2d4 e5d4 3. d1d4 b8c6 4. d4e3 g8f6 5. g1f3 f6g4 6. e3f4 c6b4
+7. f1d3 b4d3 8. c2d3 d7d5 9. e4d5 d8d5 10. b1c3 d5d3 11. f4c7 f8d6 12. c7a5
+e8g8 13. c3d5 c8e6 14. d5e3 f8d8 15. c1d2 g4e3 16. d2e3 e6a2 17. a5c3 d3a6 18.
+h2h4 a8c8 19. c3d2 d6c5 20. d2c3 c5e3 21. c3e3 a6a5 22. b2b4 a5b4 23. e1f1 a7a6
+24. f1g1 a2e6 25. f3e5 c8c2 26. h4h5 d8d2 27. a1f1 b4d6 28. e5f3 d2e2 29. e3a7
+d6c5 30. a7c5 c2c5 31. f3d4 e2e5 32. d4e6 e5e6 33. f1d1 c5e5 34. d1d8 e6e8 35.
+d8e8 e5e8 36. h1h4 h7h6 37. h4b4 e8e7 38. b4b1 e7d7 39. b1e1 d7d8 40. e1b1 d8b8
+41. b1b3 a6a5 42. b3b5 a5a4 43. b5b6 g8h8 44. b6b5 h8h7 45. b5a5 b7b5 46. a5a7
+h7g8 47. a7a5 f7f5 48. f2f4 g8h8 49. a5a7 h8g8 50. a7a5 g8h7 51. a5a7 b8d8 52.
+a7a5 d8d1 53. g1h2 d1b1 54. a5a8 b1f1 55. g2g3 f1f2 56. h2g1 f2f3 57. g1g2 f3b3
+58. a8a7 a4a3 59. g2h3 b3b1 60. a7a3 b5b4 61. a3a5 b4b3 62. a5b5 b1h1 63. h3g2
+h1h5 64. b5b3 g7g5 65. b3b7 h7g8 66. b7b8 g8f7 67. b8b7 f7e8 68. b7b8 e8d7 69.
+b8b7 d7c8 70. b7f7 g5f4 71. g3f4 c8d8 72. g2g1 d8e8 73. f7f6 e8e7 74. f6c6 h5h4
+75. c6b6 h4g4 76. g1h2 g4f4 77. b6h6 e7f7 78. h6d6 f4h4 79. h2g2 h4g4 80. g2h3
+g4g7 81. d6d5 g7g5 82. h3h4 g5g4 83. h4h3 g4f4 84. h3g3 f4f1 85. g3g2 f7e6 86.
+d5c5 f1d1 87. c5b5 d1d2 88. g2g1 f5f4 89. b5b1 f4f3 90. b1b3 f3f2 91. g1g2 e6f7
+92. b3f3 f7g8 93. f3f2 d2d7 94. f2f3 g8h8 95. f3f8 h8g7 96. f8e8 d7d2 97. g2g1
+d2d1 98. g1h2 g7h7 99. e8f8 h7g7 100. f8e8 g7h7 101. e8f8 h7g7 102. f8e8
+1/2-1/2
+
+[Event "round02-full-movetime"]
+[Round "200"]
+[White "v0"]
+[Black "v2"]
+[Result "1-0"]
+[Opening "Elephant Gambit"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. g1f3 d7d5 3. e4d5 e5e4 4. d1e2 g8f6 5. b1c3 d8e7 6. f3g5 e7e5
+7. g5e4 f6e4 8. d2d3 f8b4 9. e2e4 b4c3 10. b2c3 e5e4 11. d3e4 b8d7 12. f1d3
+e8g8 13. c1f4 f8e8 14. e1g1 d7c5 15. f1e1 e8e7 16. f4g5 e7e8 17. c3c4 c8g4 18.
+g5f4 a8c8 19. h2h3 g4d7 20. a1b1 e8d8 21. f4e3 b7b6 22. e3c5 b6c5 23. b1b7 a7a5
+24. b7a7 a5a4 25. a7a5 d8e8 26. e4e5 h7h6 27. a5c5 a4a3 28. c5a5 c8a8 29. a5a8
+e8a8 30. c4c5 c7c6 31. e5e6 d7e8 32. d5d6 f7e6 33. d3c4 e8d7 34. c4e6 d7e6 35.
+e1e6 g8f8 36. e6e4 a8b8 37. e4e3 b8a8 38. e3f3 f8g8 39. f3b3 g8h8 40. b3b6 a8e8
+41. b6c6 e8e1 42. g1h2 e1d1 43. c6c7 h8h7 44. d6d7 h7g6 45. c7c6 g6h7 46. c6d6
+d1a1 47. d7d8q a1a2 48. d8e8 a2c2 1-0
+
+[Event "round02-full-movetime"]
+[Round "197"]
+[White "v2"]
+[Black "v0"]
+[Result "0-1"]
+[Opening "Latvian Gambit"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. g1f3 f7f5 3. f3e5 d8f6 4. d2d4 d7d6 5. e5c4 f5e4 6. d1h5 f6f7
+7. h5f7 e8f7 8. b1c3 g8f6 9. c3b5 b8a6 10. c1g5 a6b4 11. c4e3 c7c5 12. g5f6
+f7f6 13. d4d5 c8d7 14. a2a3 b4a6 15. b5c3 a8e8 16. g2g4 h7h5 17. f1g2 h5g4 18.
+c3e4 f6f7 19. e1c1 a6c7 20. e3c4 h8h6 21. c1b1 f7g8 22. c4e3 f8e7 23. d1e1 h6h5
+24. c2c4 d7f5 25. e3f5 h5f5 26. e1d1 e8d8 27. h1e1 e7f6 28. e1e3 f6e5 29. e3b3
+d8b8 30. h2h4 g4h3 31. g2h3 f5f8 32. h3g4 b7b5 33. c4b5 c5c4 34. b3b4 f8f4 35.
+f2f3 b8b5 36. g4e6 g8f8 37. b4b5 c7b5 38. d1c1 c4c3 39. a3a4 b5d4 40. c1c3 d4e6
+41. c3c8 f8f7 42. d5e6 f7e6 43. c8b8 f4f5 44. b8b7 d6d5 45. e4c5 e6d6 46. c5d3
+e5d4 47. f3f4 d6c6 48. b7e7 c6d6 49. e7b7 d6c6 50. b7b5 d4f6 51. d3b4 c6d6 52.
+a4a5 f5f4 53. b5d5 d6c7 54. d5b5 f4f1 55. b1a2 c7c8 56. b4d5 f6d4 57. d5e7 c8c7
+58. a5a6 d4b6 59. b5f5 f1f5 60. e7f5 g7g5 61. f5e7 b6c5 62. e7d5 c7b8 63. d5f6
+c5d4 64. f6e4 g5g4 65. a2b1 d4e5 66. e4c5 b8a8 67. c5d3 e5d6 68. d3e1 d6f4 69.
+e1g2 f4g5 70. b2b4 a8b8 71. b4b5 b8c7 72. g2e1 c7b6 73. e1d3 b6b5 74. d3c1 g5c1
+75. b1c1 g4g3 76. c1b1 g3g2 77. b1c1 g2g1q 78. c1c2 b5a6 79. c2b2 g1d1 80. b2a2
+0-1
+
+[Event "round02-full-movetime"]
+[Round "198"]
+[White "v0"]
+[Black "v2"]
+[Result "1/2-1/2"]
+[Opening "Latvian Gambit"]
+[Termination "threefold repetition"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. g1f3 f7f5 3. f3e5 d8f6 4. d2d4 d7d6 5. e5c4 f5e4 6. d1h5 f6f7
+7. h5f7 e8f7 8. b1c3 g8f6 9. c3b5 b8a6 10. c1g5 a6b4 11. c4e3 c7c5 12. g5f6
+f7f6 13. d4d5 c8d7 14. a2a3 b4a6 15. b5c3 a8e8 16. g2g4 h7h5 17. f1g2 h5g4 18.
+g2e4 a6c7 19. e1g1 f6f7 20. f2f4 f7g8 21. a3a4 b7b5 22. e4f5 d7f5 23. e3f5 g7g6
+24. f5g3 b5b4 25. c3b5 c7d5 26. b5a7 d5e3 27. f1f2 e3c4 28. b2b3 c4e3 29. a7b5
+d6d5 30. f4f5 g6f5 31. g3f5 e3f5 32. f2f5 e8e2 33. f5d5 e2h2 34. a1f1 f8e7 35.
+f1f4 h2h1 36. g1g2 h8h2 37. g2g3 e7h4 38. g3g4 h2c2 39. d5h5 h1g1 40. g4h3 h4e1
+41. f4g4 g1g4 42. h3g4 e1d2 43. h5d5 d2e3 44. d5d8 g8h7 45. d8d7 h7h8 46. d7d8
+h8g7 47. d8d7 g7f8 48. d7d8 f8e7 49. d8d5 e7f7 50. g4f3 e3h6 51. b5d6 f7g8 52.
+d6e4 c5c4 53. b3c4 c2c4 54. d5d8 h6f8 55. e4g5 c4c6 56. d8e8 c6f6 57. f3e2 b4b3
+58. e8b8 f6a6 59. b8b3 a6a4 60. b3b8 a4g4 61. g5f3 g8g7 62. b8b7 g7h8 63. e2f1
+f8g7 64. b7b8 h8h7 65. b8b7 g4g6 66. b7e7 g6g3 67. f1f2 g3g4 68. f2f1 h7g8 69.
+e7e8 g8f7 70. e8e2 f7f8 71. e2d2 g7f6 72. d2g2 g4g2 73. f1g2 f8g8 74. f3e5 f6e7
+75. e5d7 e7d6 76. d7f6 g8h8 77. g2f2 d6c5 78. f2g2 h8g7 79. f6d5 g7f8 80. d5e7
+f8g7 81. e7d5 g7h7 82. d5e7 c5d4 83. e7c6 d4f6 84. c6e7 f6g7 85. e7d5 g7d4 86.
+d5e7 h7h8 87. e7g8 d4b6 88. g8e7 h8h7 89. e7d5 b6d4 90. d5e7 h7h8 91. e7g8 h8h7
+92. g8e7 1/2-1/2
+
+[Event "round02-full-movetime"]
+[Round "64"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "Caro-Kann Classical"]
+[Termination "checkmate"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 c7c6 2. d2d4 d7d5 3. b1c3 d5e4 4. c3e4 c8f5 5. d1f3 f5e4 6. f3e4 g8f6
+7. e4d3 b8d7 8. g1f3 d8c7 9. f1e2 e7e5 10. e1g1 f8d6 11. d4e5 d7e5 12. f3e5
+d6e5 13. f2f4 e5d6 14. c1e3 e8g8 15. h2h3 f8d8 16. a1d1 a8c8 17. e3a7 d6f4 18.
+d3f5 f4e5 19. d1d8 c8d8 20. b2b4 b7b6 21. g1h1 e5d6 22. a7b6 c7b6 23. f5a5 b6a5
+24. b4a5 f6e4 25. h1g1 d6c5 26. g1h2 d8a8 27. e2d3 e4f2 28. d3c4 a8a5 29. f1b1
+c5d6 30. h2g1 a5c5 31. c4b3 f2e4 32. b1f1 e4f6 33. f1d1 d6c7 34. d1b1 c7e5 35.
+b1d1 h7h6 36. d1d8 g8h7 37. d8f8 e5d4 38. g1h2 f6d5 39. f8f7 d5e3 40. f7d7 d4e5
+41. h2g1 e3c2 42. d7d8 e5f6 43. d8f8 f6d4 44. g1h1 c2e3 45. b3g8 h7g6 46. g8f7
+g6g5 47. g2g3 e3f5 48. g3g4 c5c1 49. h1g2 f5h4 50. g2g3 c1g1 51. g3h2 h4f3 0-1
+
+[Event "round02-full-movetime"]
+[Round "62"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "French Rubinstein"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e6 2. d2d4 d7d5 3. b1c3 d5e4 4. c3e4 b8d7 5. g1f3 g8f6 6. f1d3 f6e4
+7. d3e4 f8b4 8. c1d2 b4d2 9. d1d2 d7f6 10. e4d3 e8g8 11. e1g1 d8d6 12. f1e1
+c8d7 13. f3e5 d7c6 14. e5c6 d6c6 15. d2f4 h7h5 16. f4e5 c6b6 17. e5c5 b6c5 18.
+d4c5 f6d7 19. b2b4 f8b8 20. d3b5 d7f6 21. b5c4 b8e8 22. b4b5 e6e5 23. c5c6 a8b8
+24. a1d1 b7c6 25. b5c6 b8b6 26. d1b1 b6b1 27. e1b1 f6e4 28. b1e1 e4d6 29. c4d5
+h5h4 30. c2c4 a7a6 31. h2h3 g7g5 32. c4c5 d6b5 33. d5e4 b5d4 34. e1e3 d4e6 35.
+e3c3 e8b8 36. e4d5 b8b1 37. g1h2 e6f4 38. d5e4 b1b2 39. c3a3 f4e6 40. a3a6 e6c5
+41. a6a8 g8g7 42. f2f3 c5e6 43. a8a5 e6f4 44. a5e5 b2g2 45. h2h1 g2g3 46. e5e7
+g3h3 47. h1g1 h3g3 48. g1h1 g3g2 49. a2a4 h4h3 50. e4f5 g7f6 51. e7c7 f6f5 52.
+c7f7 f5g6 53. f7f4 g5f4 54. a4a5 g2c2 55. a5a6 c2c6 56. a6a7 c6c8 57. h1h2 c8h8
+58. a7a8q h8a8 59. h2h3 g6h7 60. h3g2 a8a3 61. g2f2 a3a7 62. f2e1 h7g8 63. e1f1
+a7g7 64. f1f2 g7g3 65. f2e2 g3g2 66. e2f1 g2g6 67. f1f2 g6d6 68. f2g2 g8h8 69.
+g2g1 d6d3 70. g1g2 h8g8 71. g2f2 g8f8 72. f2g2 d3e3 73. g2f2 f8g7 74. f2g2 g7h6
+75. g2f2 h6h5 76. f2g2 h5h4 77. g2h2 e3e2 78. h2g1 h4g3 79. g1f1 e2e8 80. f1g1
+0-1
+
+[Event "round02-full-movetime"]
+[Round "196"]
+[White "v0"]
+[Black "v2"]
+[Result "1-0"]
+[Opening "Danish Declined"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e5 2. d2d4 e5d4 3. c2c3 d7d5 4. e4d5 g8f6 5. g1f3 f6d5 6. c3d4 b8c6
+7. b1c3 d8e7 8. d1e2 d5c3 9. b2c3 e7e2 10. f1e2 f8d6 11. d4d5 c6e5 12. e1g1
+e5f3 13. e2f3 e8g8 14. c3c4 c8f5 15. c1e3 f5d3 16. f1e1 d3c4 17. a1b1 f8b8 18.
+b1b2 c4d3 19. e3d4 h7h6 20. e1e3 d3g6 21. e3b3 b8e8 22. b3e3 b7b6 23. b2e2 e8d8
+24. e2e1 b6b5 25. d4e5 d6e5 26. e3e5 a7a5 27. e5e7 a8a7 28. e1c1 b5b4 29. e7c7
+a7c7 30. c1c7 g6b1 31. c7a7 b1a2 32. a7a5 a2c4 33. a5c5 d8e8 34. h2h3 b4b3 35.
+c5c4 e8e1 36. g1h2 b3b2 37. c4c8 g8h7 38. c8b8 b2b1q 39. b8b1 e1b1 40. f3e4
+h7g8 41. e4b1 g8f8 42. d5d6 f8e8 43. b1f5 h6h5 44. h2g1 e8d8 45. h3h4 g7g6 46.
+f5e4 d8d7 47. e4d5 f7f6 48. d5f7 g6g5 49. h4g5 f6g5 50. f7h5 d7d6 51. g1h2 d6e7
+52. h2g3 e7e6 53. g3h3 e6f5 54. h5e2 f5f6 55. h3g4 f6g6 56. e2d3 g6h6 57. d3e4
+h6g7 58. g4g5 g7h8 59. g5h4 h8g8 60. e4d5 g8h8 61. h4h3 h8h7 62. h3h2 h7h8 63.
+h2g1 h8h7 64. d5e6 h7h8 65. e6c4 h8h7 66. c4d5 h7g7 67. f2f4 g7f6 68. d5e4 f6e7
+69. f4f5 e7f6 70. e4b1 f6g7 71. b1a2 g7f6 72. a2e6 f6e5 73. g2g4 e5f6 74. e6c4
+f6g5 75. c4b3 g5f6 76. b3e6 f6g5 77. g1h2 g5f6 78. h2g2 f6g5 79. e6d5 g5f6 80.
+g2g1 f6g5 81. g1h2 g5f6 82. d5g8 f6g7 83. g8c4 g7f6 84. c4e6 f6g5 85. e6b3 g5f6
+86. b3d5 f6e5 87. d5e4 e5f6 88. e4d3 f6g5 89. d3b5 g5f6 90. h2g1 f6g5 91. b5c4
+g5f6 92. c4b3 f6g5 93. b3g8 g5f6 94. g1g2 f6g5 95. g8c4 g5f6 96. c4b5 f6g5 97.
+g2g1 g5f6 98. b5c6 f6e5 99. g1g2 e5f6 100. c6d5 f6g5 101. d5e6 g5f6 102. e6b3
+f6g5 103. g2h1 g5f6 104. b3e6 f6g5 105. e6g8 g5f6 106. g8d5 f6g5 107. d5a8 g5f6
+108. h1h2 f6e5 109. a8f3 e5f6 110. h2g2 f6g5 111. f3a8 g5f6 112. a8c6 f6g5 113.
+c6e4 g5f6 114. e4b7 f6e5 115. b7a6 e5f6 116. a6d3 f6g5 117. d3b5 g5f6 118. b5c4
+f6g5 119. c4b3 g5f6 120. g2h2 f6e5 121. h2g3 e5f6 122. g3f4 f6g7 123. g4g5 g7h7
+124. f5f6 h7g6 125. b3g8 g6h5 126. f6f7 1-0
+
+[Event "round02-full-movetime"]
+[Round "60"]
+[White "v0"]
+[Black "v2"]
+[Result "0-1"]
+[Opening "French Exchange"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 e7e6 2. d2d4 d7d5 3. e4d5 e6d5 4. g1f3 g8f6 5. f1b5 b8d7 6. b1c3 f8b4
+7. d1e2 e8f8 8. c1g5 b4c3 9. b2c3 a7a6 10. b5d7 c8d7 11. c3c4 d5c4 12. e2c4
+d7b5 13. c4c5 f8g8 14. g5f6 g7f6 15. c2c4 b7b6 16. c5b4 b5c6 17. d4d5 a6a5 18.
+b4c3 d8e7 19. e1f1 c6b7 20. f3d4 e7c5 21. c3d3 b7a6 22. d4b5 a8d8 23. d3g3 g8f8
+24. g3c7 c5c7 25. b5c7 a6c4 26. f1g1 d8d7 27. c7a8 d7d6 28. a8c7 f8g7 29. a1e1
+d6d7 30. c7e8 g7g6 31. h2h4 d7d5 32. h4h5 d5h5 33. h1h5 g6h5 34. e8f6 h5g6 35.
+f6d7 b6b5 36. a2a4 g6g7 37. d7e5 h8e8 38. e1e3 e8d8 39. e3g3 g7f8 40. a4b5 c4b5
+41. g3f3 b5e8 42. f3f5 a5a4 43. f5h5 a4a3 44. h5h1 d8d1 45. g1h2 d1h1 46. h2h1
+a3a2 47. e5g4 a2a1q 48. h1h2 a1b2 49. h2g3 f7f5 50. g4e3 f5f4 51. g3h2 f4e3 52.
+f2e3 e8c6 53. e3e4 c6e4 0-1
+
+[Event "round02-full-movetime"]
+[Round "65"]
+[White "v2"]
+[Black "v0"]
+[Result "0-1"]
+[Opening "Caro-Kann Advance"]
+[Termination "adjudicated: resignation"]
+[TimeControl "movetime 1000 ms"]
+
+1. e2e4 c7c6 2. d2d4 d7d5 3. e4e5 c8f5 4. g1f3 e7e6 5. b1c3 g8e7 6. f1d3 b8d7
+7. e1g1 d8b6 8. d3f5 e7f5 9. g2g4 f5e7 10. d1d3 a8d8 11. a1b1 c6c5 12. c1f4
+c5d4 13. f3d4 f7f6 14. e5f6 d7f6 15. f1e1 f6g4 16. e1e6 b6c5 17. e6e1 e8f7 18.
+h2h3 e7c6 19. d3f5 g4f6 20. d4e6 g7g6 21. f5d3 c5c4 22. d3c4 d5c4 23. e6d8 c6d8
+24. f4g5 d8e6 25. g5f6 f7f6 26. e1e4 e6g5 27. e4f4 f6e5 28. f4c4 g5h3 29. g1f1
+f8d6 30. c3b5 h8f8 31. c4h4 f8f2 32. f1e1 f2h2 33. b1d1 h2h1 34. e1d2 h1d1 35.
+d2d1 h3g5 36. b5a7 e5f6 37. a7c8 d6c5 38. b2b4 c5f8 39. h4d4 g5f7 40. d4d7 f8b4
+41. d7b7 b4c5 42. d1c1 g6g5 43. c1b1 g5g4 44. b7c7 g4g3 45. c7c5 g3g2 46. c5c6
+f6g7 47. c8b6 g2g1q 48. b1b2 g1d4 49. b2b1 d4b4 50. b1c1 b4b5 51. c6e6 b5f1 52.
+c1b2 f1f5 53. e6e3 f5f6 54. b2b1 f6b6 55. e3b3 b6g1 56. b1b2 f7d6 57. b3b4 h7h6
+58. a2a3 g1e3 59. b4g4 g7h8 60. g4b4 d6e4 61. b4b8 h8h7 62. b8b7 h7g6 63. b7b3
+e3d4 64. b2a2 e4c3 65. a2b2 c3e2 66. b2b1 d4g1 67. b1a2 e2c1 68. a2b2 c1b3 69.
+c2b3 g1f2 70. b2b1 f2e1 71. b1c2 e1a1 72. a3a4 g6h7 73. c2d3 a1c1 74. a4a5 c1b2
+75. d3c4 b2c2 76. c4b4 c2a2 77. b4c3 a2a5 78. c3b2 a5e5 79. b2a3 e5a1 80. a3b4
+h7g8 81. b4c4 h6h5 82. c4d3 a1b2 83. d3c4 h5h4 84. c4d3 h4h3 85. d3c4 h3h2 86.
+b3b4 h2h1q 0-1
+
