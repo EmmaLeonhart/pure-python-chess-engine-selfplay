@@ -1,0 +1,53 @@
+{
+ "match": "round03-null-move",
+ "a": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v3",
+ "b": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v2",
+ "a_label": "v3",
+ "b_label": "v2",
+ "movetime_ms": 1000,
+ "workers": 6,
+ "planned_games": 200,
+ "started": "2026-10-06T09:52:17-07:00",
+ "finished": null,
+ "stats": {
+  "games": 2,
+  "wins": 0,
+  "draws": 2,
+  "losses": 0,
+  "score": 0.5,
+  "score_se": 0.0,
+  "elo": -0.0,
+  "elo_lo": -0.0,
+  "elo_hi": -0.0,
+  "elo_error": 0.0
+ },
+ "replays": [],
+ "abandoned": [],
+ "stalls": [],
+ "games": [
+  {
+   "match": "round03-null-move",
+   "index": 4,
+   "opening": "Ruy Lopez Exchange",
+   "white": "v3",
+   "black": "v2",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 67,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  },
+  {
+   "match": "round03-null-move",
+   "index": 5,
+   "opening": "Ruy Lopez Exchange",
+   "white": "v2",
+   "black": "v3",
+   "result": "1/2-1/2",
+   "termination": "threefold repetition",
+   "plies": 37,
+   "a_score": 0.5,
+   "movetime_ms": 1000
+  }
+ ]
+}

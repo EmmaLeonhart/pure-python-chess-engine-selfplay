@@ -1,0 +1,2 @@
+[09:52:46] game 1/200 Ruy Lopez Exchange: v2 vs v3 1/2-1/2 (threefold repetition); 1 games: +0 =1 -0, score 50.0%, Elo -0.0 +- 0.0 (95% interval -0.0 to -0.0)
+[09:53:14] game 2/200 Ruy Lopez Exchange: v3 vs v2 1/2-1/2 (threefold repetition); 2 games: +0 =2 -0, score 50.0%, Elo -0.0 +- 0.0 (95% interval -0.0 to -0.0)

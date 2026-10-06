@@ -6,6 +6,8 @@ from engine.board import move_uci, SQUARES, KNIGHT, BISHOP, ROOK, QUEEN
 from engine.evaluate import evaluate, VALUE
 
 NULL_R = 2
+LMR_MIN_DEPTH = 3
+LMR_MIN_MOVES = 3
 
 INF = 1_000_000
 MATE = 100_000
@@ -142,13 +144,24 @@ class Searcher:
         best = -INF
         best_move = 0
         legal = 0
+        b = board.sq
         for m in self.order(board, board.pseudo_moves(), tt_move):
+            quiet = not b[(m >> 7) & 127] and not (m >> 14) & 7 and m >> 17 != 2
             board.make(m)
             if board.attacked(board.king[side], -side):
                 board.unmake()
                 continue
             legal += 1
-            score = -self.negamax(board, depth - 1, -beta, -alpha, ply + 1)
+            # Late move reductions: quiet moves late in the ordering are searched shallower with a
+            # null window first, and re-searched at full depth only if they beat alpha.
+            if (depth >= LMR_MIN_DEPTH and legal > LMR_MIN_MOVES and quiet and not in_check
+                    and not board.attacked(board.king[-side], side)):
+                r = 2 if (legal > 8 and depth >= 6) else 1
+                score = -self.negamax(board, depth - 1 - r, -alpha - 1, -alpha, ply + 1)
+                if score > alpha:
+                    score = -self.negamax(board, depth - 1, -beta, -alpha, ply + 1)
+            else:
+                score = -self.negamax(board, depth - 1, -beta, -alpha, ply + 1)
             board.unmake()
             if score > best:
                 best = score
