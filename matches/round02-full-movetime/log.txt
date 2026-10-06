@@ -1,0 +1,1 @@
+[08:33:27] game 1/200 Ruy Lopez Morphy: v0 vs v2 0-1 (adjudicated: resignation); 1 games: +1 =0 -0, score 100.0%, Elo +inf +- nan (95% interval +inf to +inf)

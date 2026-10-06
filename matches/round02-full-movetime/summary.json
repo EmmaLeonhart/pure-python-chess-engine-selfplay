@@ -1,0 +1,41 @@
+{
+ "match": "round02-full-movetime",
+ "a": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v2",
+ "b": "C:\\Users\\Emma\\Documents\\GitHub\\cleanvibe-practice\\hidden-vivid-thistle\\versions\\v0",
+ "a_label": "v2",
+ "b_label": "v0",
+ "movetime_ms": 1000,
+ "workers": 6,
+ "planned_games": 200,
+ "started": "2026-10-06T08:32:43-07:00",
+ "finished": null,
+ "stats": {
+  "games": 1,
+  "wins": 1,
+  "draws": 0,
+  "losses": 0,
+  "score": 1.0,
+  "score_se": 0.0,
+  "elo": Infinity,
+  "elo_lo": Infinity,
+  "elo_hi": Infinity,
+  "elo_error": NaN
+ },
+ "replays": [],
+ "abandoned": [],
+ "stalls": [],
+ "games": [
+  {
+   "match": "round02-full-movetime",
+   "index": 1,
+   "opening": "Ruy Lopez Morphy",
+   "white": "v0",
+   "black": "v2",
+   "result": "0-1",
+   "termination": "adjudicated: resignation",
+   "plies": 58,
+   "a_score": 1.0,
+   "movetime_ms": 1000
+  }
+ ]
+}

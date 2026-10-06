@@ -2,8 +2,10 @@
 
 import time
 
-from engine.board import move_uci
+from engine.board import move_uci, SQUARES, KNIGHT, BISHOP, ROOK, QUEEN
 from engine.evaluate import evaluate, VALUE
+
+NULL_R = 2
 
 INF = 1_000_000
 MATE = 100_000
@@ -15,6 +17,16 @@ TT_MAX = 1_000_000
 
 class Timeout(Exception):
     pass
+
+
+def has_pieces(board, side):
+    """True if `side` has a knight, bishop, rook or queen (null move is unsafe in pawn endings)."""
+    b = board.sq
+    for s in SQUARES:
+        p = b[s] * side
+        if KNIGHT <= p <= QUEEN:
+            return True
+    return False
 
 
 def victim_value(board, m):
@@ -88,7 +100,7 @@ class Searcher:
                         break
         return best
 
-    def negamax(self, board, depth, alpha, beta, ply):
+    def negamax(self, board, depth, alpha, beta, ply, allow_null=True):
         if ply and (board.halfmove >= 100 or board.is_repetition() or board.insufficient_material()):
             return 0
         side = board.side
@@ -116,6 +128,15 @@ class Searcher:
                     return e_score
                 if e_flag == UPPER and e_score <= alpha:
                     return e_score
+
+        # Null-move pruning: if passing still fails high at reduced depth, assume a real move will too.
+        if (allow_null and ply and not in_check and depth >= 3 and beta < MATE_BOUND
+                and has_pieces(board, side) and evaluate(board) >= beta):
+            board.make_null()
+            score = -self.negamax(board, depth - 1 - NULL_R, -beta, -beta + 1, ply + 1, False)
+            board.unmake_null()
+            if score >= beta:
+                return beta
 
         alpha_orig = alpha
         best = -INF
