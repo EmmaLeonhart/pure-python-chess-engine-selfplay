@@ -48,10 +48,14 @@ class EngineError(Exception):
 
 
 class Engine:
-    def __init__(self, path):
+    def __init__(self, path, debug_log=None):
         self.path = path
+        if debug_log:
+            cmd = [sys.executable, os.path.join(ROOT, "match", "engine_host.py"), path, debug_log]
+        else:
+            cmd = [sys.executable, os.path.join(path, "chess_engine.py")]
         self.proc = subprocess.Popen(
-            [sys.executable, os.path.join(path, "chess_engine.py")],
+            cmd,
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
             text=True, bufsize=1, cwd=path)
         self.lines = queue.Queue()
@@ -197,7 +201,7 @@ def pgn(game):
     return "\n".join(lines) + "\n\n" + "\n".join(body) + "\n\n"
 
 
-def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_root=None):
+def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_root=None, debug=False):
     openings = load_openings()
     jobs = []
     for i, (oname, omoves) in enumerate(openings):
@@ -206,7 +210,7 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
     if max_games is not None:
         jobs = jobs[:max_games]
     workers = workers or max(1, (os.cpu_count() or 2) // 2)
-    out_dir = os.path.join(out_root or os.path.join(ROOT, "matches"), name)
+    out_dir = os.path.abspath(os.path.join(out_root or os.path.join(ROOT, "matches"), name))
     os.makedirs(out_dir, exist_ok=True)
     a_label, b_label = os.path.basename(os.path.normpath(a)), os.path.basename(os.path.normpath(b))
     if a_label == b_label:
@@ -237,8 +241,17 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
             json.dump(summary, f, indent=1)
         return summary
 
+    def engines():
+        if not debug:
+            return Engine(a), Engine(b)
+        n = next(engine_ids)
+        return (Engine(a, os.path.join(out_dir, "engine-%03d-a.log" % n)),
+                Engine(b, os.path.join(out_dir, "engine-%03d-b.log" % n)))
+
+    engine_ids = iter(range(10**6))
+
     def worker():
-        ea, eb = Engine(a), Engine(b)
+        ea, eb = engines()
         try:
             while True:
                 try:
@@ -269,7 +282,7 @@ def run_match(a, b, name, movetime_ms=1000, workers=None, max_games=None, out_ro
                     if term.startswith("forfeit"):
                         ea.quit()
                         eb.quit()
-                        ea, eb = Engine(a), Engine(b)
+                        ea, eb = engines()
         finally:
             ea.quit()
             eb.quit()
@@ -296,9 +309,11 @@ def main():
     p.add_argument("--workers", type=int, default=None, help="games in parallel (default: half the cores)")
     p.add_argument("--games", type=int, default=None, help="play only the first N games (smoke tests)")
     p.add_argument("--out", default=None, help="output root (default: matches/)")
+    p.add_argument("--debug", action="store_true",
+                   help="run engines under match/engine_host.py, logging stderr and hang stack dumps")
     args = p.parse_args()
     run_match(os.path.abspath(args.a), os.path.abspath(args.b), args.name, args.movetime,
-              args.workers, args.games, args.out)
+              args.workers, args.games, args.out, args.debug)
 
 
 if __name__ == "__main__":
