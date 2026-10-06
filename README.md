@@ -21,8 +21,13 @@ change at a time by measured self-play. The spec is `data_lake/brief.md`.
 
 - A match is 200 games: each of the 100 openings in `match/openings.txt`
   (well-known lines of 8-10 plies) is played once with each engine as white,
-  at `go movetime 1000` (1 second a move). Games run 8 at a time, one per
-  pair of CPU cores.
+  at `go movetime 1000` (1 second a move). Games run 6 at a time.
+- This machine is shared with other heavy jobs. If an engine doesn't answer
+  within 30 s of its move time, or dies, the game is replayed from the start
+  (up to 3 attempts) rather than scored as a forfeit. A game that never
+  completes is left out of the score. Each match's `summary.json` lists
+  replays, abandoned games and the runner's scheduling stalls. Illegal moves
+  are still forfeits.
 - Games end on mate, stalemate, threefold repetition, the 50-move rule or
   insufficient material. The runner adjudicates a resignation when both
   engines' reported scores agree on +-1000 cp or more for 4 moves each, and a
